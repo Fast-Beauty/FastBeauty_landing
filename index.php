@@ -6,3 +6,5 @@ $method = isset($_GET['m']) ? $_GET['m'] : 'landing';
 require_once('./controllers/'.$controller.'.php');
 $obj= new $controller();
 $obj->$method();
+
+echo "hola";
