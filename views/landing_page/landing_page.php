@@ -34,7 +34,7 @@
     <div class="container">
         <div class="titulo text-center text-uppercase gris-color">
             <h2 class="fuente-secundaria fw-semibold">Nuestros servicios</h2>
-            <p>En FastBeauty nos preocupamos por tu belleza</p>
+            <p>En FastBeauty nos preocupamos</p>
         </div>
         <div class="contenedor-servicios">
             <div class="servicio relative mx-auto d-flex align-items-center justify-content-between servicio1">
