@@ -1,0 +1,10 @@
+{
+  "usuarios": [
+    {
+      "inputEmail": "correo@correo.com",
+      "inputPassword": "123",
+      "inputConfirm": "123",
+      "id": 1
+    }
+  ]
+}
