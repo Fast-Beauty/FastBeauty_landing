@@ -12,7 +12,7 @@
                             Praesent nec odio quis sem tincidunt venenatis. Nunc eleifend fringilla ligula, ac iaculis lorem rutrum id
                         </p>
                         <div class="reservar-btn d-flex justify-content-start">
-                            <button>Reserva ahora</button>
+                            <a href="#">Reserva ahora</a>
                         </div>
                     </div>
                 </div>
@@ -75,7 +75,7 @@
             </div>
         </div>
         <div class="ver-servicios d-flex justify-content-center">
-            <button>Ver mas servicios</button>
+            <a href="#">Ver mas servicios</a>
         </div>
     </div>
 </main>
@@ -191,7 +191,7 @@
                 </div>
             </div>
             <div class="ver-productos d-flex justify-content-center">
-                <button>Ver todos los productos</button>
+                <a href="#">Ver todos los productos</a>
             </div>
         </div>
         <div class="flower1">
