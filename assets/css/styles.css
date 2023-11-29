@@ -460,6 +460,32 @@ ul {
 }
 
 
+/* Pagina servicios */
+.servicio_info h1 {
+    font-size: 45px;
+}
+
+.servicio_datos .dato {
+    margin-bottom: 32px;
+}
+
+.servicio_datos .icono {
+    margin-right: 24px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--rosaSalmon);
+    border-radius: 50%;
+}
+
+.servicio_datos .icono img {
+    width: 38px;
+}
+
+.servicio_datos p {
+    letter-spacing: 1.2px;
+    margin: 0;
+}
+
 /* ------------------------ */
 
 

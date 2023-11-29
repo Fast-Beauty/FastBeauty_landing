@@ -75,7 +75,7 @@
             </div>
         </div>
         <div class="ver-servicios d-flex justify-content-center">
-            <a href="#">Ver mas servicios</a>
+            <a href="?c=Services&m=index">Ver mas servicios</a>
         </div>
     </div>
 </main>
