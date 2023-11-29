@@ -242,9 +242,9 @@ ul {
 }
 
 
-.reservar-btn button,
-.ver-productos button,
-.ver-servicios button {
+.reservar-btn a,
+.ver-productos a,
+.ver-servicios a {
     background-color: var(--rosaSalmon);
     padding: 20px 30px;
     margin-top: 40px;
@@ -252,22 +252,21 @@ ul {
     color: #28292B;
     font-weight: 900;
     transition-property: transform, box-shadow;
-    transition: .3s;
-    border: none;
+    transition-duration: .3s;
     z-index: 1;
     box-shadow: 0 0px 16px 1px rgb(255, 192, 203, 0.6);
 }
-@media (min-width: 768px) { 
-    .reservar-btn button,
-    .ver-productos button,
-    .ver-servicios button {
+@media (min-width: 768px) {
+    .reservar-btn a,
+    .ver-productos a, 
+    .ver-servicios a {
         letter-spacing: 1.8px;
     }
 } 
 
-.reservar-btn button:hover,
-.ver-productos button:hover,
-.ver-servicios button:hover {
+.reservar-btn a:hover,
+.ver-productos a:hover,
+.ver-servicios a:hover {
     transform: scale(1.1);
     box-shadow: 0 0px 16px 2px rgb(255, 192, 203, 0.9);
 }
