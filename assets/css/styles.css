@@ -461,6 +461,12 @@ ul {
 
 
 /* Pagina servicios */
+.servicio_container {
+    margin: 0 auto;
+    width: 1200px;
+    padding: 80px;
+}
+
 .servicio_info h1 {
     font-size: 45px;
 }
@@ -484,6 +490,27 @@ ul {
 .servicio_datos p {
     letter-spacing: 1.2px;
     margin: 0;
+}
+
+.servicio_img img{
+    width: 439px;
+    height: 465px;
+    object-fit: cover;
+    position: relative;
+}
+.servicio_img {
+    position: relative;
+}
+
+.servicio_img::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: var(--rosaSalmon);
+    transform: translate(30px, -30px);
 }
 
 /* ------------------------ */
