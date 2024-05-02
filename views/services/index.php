@@ -4,6 +4,9 @@
         <p class="text-uppercase text-center subtitulo-services">our services</p>
         <p class="text-center titulo-services">Well Experience Beauty at your Service</p>
     </div>
+    <div class="alerta-servicios text-center">
+        <p>No hay servicios aún, estamos trabajando en ello</p>
+    </div>
     <div class="container">
         <?php foreach($this->modelosvc->listar() as $datos): ?>
         <div class="servicio_container d-flex justify-content-between align-items-center">
@@ -43,3 +46,4 @@
         <?php endforeach; ?>
     </div>
 </section>
+<script src="./assets/js/services.js"></script>

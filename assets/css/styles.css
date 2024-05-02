@@ -462,7 +462,7 @@ ul {
 
 /* Pagina servicios */
 .servicios__header {
-    background-image: url('/assets/images/header-services.svg');
+    background-image: url('./images/header-services.svg');
     background-color: var(--rosaSalmonOpaco);
     padding: 80px 0;
 }
@@ -481,6 +481,12 @@ ul {
     color: var(--gris);
     width: 650px;
     margin: 0 auto;
+}
+
+.alerta-servicios {
+    display: none;
+    font-size: 40px;
+    margin: 200px 0;
 }
 
 .servicio_container {
