@@ -461,10 +461,36 @@ ul {
 
 
 /* Pagina servicios */
+.servicios__header {
+    background-image: url('/assets/images/header-services.svg');
+    background-color: var(--rosaSalmonOpaco);
+    padding: 80px 0;
+}
+
+.servicios__header .subtitulo-services {
+    font-family: var(--fuentePrincipal);
+    font-size: 15px;
+    color: var(--gris);
+    width: 650px;
+    margin: 0 auto;
+}
+.servicios__header .titulo-services {
+    font-weight: bold;
+    font-family: var(--fuenteSecundaria);
+    font-size: 55px;
+    color: var(--gris);
+    width: 650px;
+    margin: 0 auto;
+}
+
 .servicio_container {
     margin: 0 auto;
     width: 1200px;
     padding: 80px;
+}
+
+.servicio_container:nth-child(2n) {
+    flex-direction: row-reverse;
 }
 
 .servicio_info h1 {
