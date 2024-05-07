@@ -18,7 +18,7 @@
                     <a class="nav-link gris-color" href="#">Productos</a>
                 </li>
                 <li class="nav-item d-flex fw-bold align-items-center">
-                    <a class="nav-link gris-color" href="#"> Reserva</a>
+                    <a class="nav-link gris-color" href="?c=Appointments&m=index"> Reserva</a>
                 </li>
                 <li class="nav-item d-flex fw-bold align-items-center">
                     <a class="nav-link gris-color" href="#">Contacto</a>
