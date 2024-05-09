@@ -76,3 +76,66 @@ width: 100%;
     height: 500px;
     width: 392px;
 }
+
+/* Fecha */
+.appointments-date {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.available-nonavailable {
+    display: flex;
+}
+
+.calendario {
+    padding: 30px;
+    width: 765px;
+    border-radius: 12px;
+    background: var(--White, #FFF);
+    box-shadow: 0px 30px 84px 0px rgba(19, 10, 46, 0.08), 0px 8px 32px 0px rgba(19, 10, 46, 0.07), 0px 3px 14px 0px rgba(19, 10, 46, 0.03), 0px 1px 3px 0px rgba(19, 10, 46, 0.13);
+}
+
+.calendario .head {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.calendario .main ul{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    text-align: center;
+}
+
+.calendario .main li{
+    width: calc(100% / 7);
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calendario .days {
+    margin: 0;
+}
+
+.calendario .days li{
+    cursor: pointer;
+}
+
+.calendario .days .block {
+    background-color: var(--rosaSalmon);
+    border-radius: 40px;
+    pointer-events: none;
+}
+
+.calendario .main .weeks {
+    font-weight: bold;
+}
+
+/* time */
+.time li {
+    width: calc(100% / 3);
+}

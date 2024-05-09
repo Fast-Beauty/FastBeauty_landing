@@ -24,6 +24,90 @@
         <a class="carousel-item" href="#5" style="background-image: url(./assets/images/appointments/estilista-5.jpg);"></a>
     </div>
   </div>
+  <div class="appointments-date">
+    <h2 class="title text-uppercase text-center mt-5">Selecciona la fecha</h2>
+    <div class="available-nonavailable">
+      <p class="available">Disponible</p>
+      <p class="available">No disponible</p>
+    </div>
+    <div class="calendario">
+      <div class="head">
+        <h3 class="Current-date">Mayo 9</h3>
+        <div class="icons">
+          <i class="bi bi-chevron-left"></i>
+          <i class="bi bi-chevron-right"></i>
+        </div>
+      </div>
+      <div class="main">
+        <ul class="weeks">
+          <li>Lun</li>
+          <li>Mar</li>
+          <li>Mier</li>
+          <li>Juev</li>
+          <li>Vier</li>
+          <li>Sab</li>
+          <li>Dom</li>
+        </ul>
+        <ul class="days">
+          <li>28</li>
+          <li>29</li>
+          <li>30</li>
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>4</li>
+          <li>5</li>
+          <li>6</li>
+          <li>7</li>
+          <li class="block">8</li>
+          <li>9</li>
+          <li>10</li>
+          <li>11</li>
+          <li class="block">12</li>
+          <li>13</li>
+          <li>14</li>
+          <li>15</li>
+          <li>16</li>
+          <li>17</li>
+          <li>18</li>
+          <li>19</li>
+          <li>20</li>
+          <li>21</li>
+          <li>22</li>
+          <li>23</li>
+          <li>24</li>
+          <li>25</li>
+          <li>26</li>
+          <li class="block">27</li>
+          <li>28</li>
+          <li>29</li>
+          <li>30</li>
+          <li>31</li>
+          <li>1</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+  <div class="appointments-date">
+    <h2 class="title text-uppercase text-center mt-5">Selecciona la hora</h2>
+    <div class="hour">
+      <div class="main">
+        <ul class="time">
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>4</li>
+          <li>5</li>
+          <li>6</li>
+          <li>7</li>
+          <li>8</li>
+          <li>9</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
 </section>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script>
