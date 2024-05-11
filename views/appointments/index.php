@@ -1,11 +1,11 @@
 <!-- contenido -->   
 <link rel="stylesheet" href="./assets/css/style-appointments.css">
 <section class="appointments">
-  <h2 class="title text-uppercase bolder p-4">Agenda tu cita</h2>
-  <div class="appointments-services">
+  <h2 class="title-page text-uppercase bolder p-4 container">Agenda tu cita</h2>
+  <div class="appointments-services mb-5">
     <h2 class="title text-uppercase text-center">Elige un servicio</h2>
+    <h3 class="sub-title text-center">Servicio</h3>
     <div class="m-carousel">
-        <h3 class="title text-center">Servicio</h3>
         <a class="carousel-item" href="#1" style="background-image: url(./assets/images/appointments/haircut.png);"></a>
         <a class="carousel-item" href="#2" style="background-image: url(./assets/images/appointments/depilacion.png);"></a>
         <a class="carousel-item" href="#3" style="background-image: url(./assets/images/appointments/pedicure.svg);"></a>
@@ -13,10 +13,10 @@
         <a class="carousel-item" href="#5" style="background-image: url(./assets/images/appointments/tinturado.svg);"></a>
     </div>
   </div>
-  <div class="appointments-stylist">
+  <div class="appointments-stylist mb-5">
     <h2 class="title text-uppercase text-center mt-5">Elige tu estilista preferido</h2>
+    <h3 class="sub-title text-center">Servicio</h3>
     <div class="m-carousel">
-        <h3 class="title text-center">Servicio</h3>
         <a class="carousel-item" href="#1" style="background-image: url(./assets/images/appointments/estilista-1.jpg);"></a>
         <a class="carousel-item" href="#2" style="background-image: url(./assets/images/appointments/estilista-2.jpg);"></a>
         <a class="carousel-item" href="#3" style="background-image: url(./assets/images/appointments/estilista-3.jpg);"></a>
@@ -24,11 +24,11 @@
         <a class="carousel-item" href="#5" style="background-image: url(./assets/images/appointments/estilista-5.jpg);"></a>
     </div>
   </div>
-  <div class="appointments-date">
+  <div class="appointments-date mb-5">
     <h2 class="title text-uppercase text-center mt-5">Selecciona la fecha</h2>
     <div class="available-nonavailable">
       <p class="available">Disponible</p>
-      <p class="available">No disponible</p>
+      <p class="non-available">No disponible</p>
     </div>
     <div class="calendario">
       <div class="head">
@@ -89,7 +89,7 @@
 
     </div>
   </div>
-  <div class="appointments-date">
+  <div class="appointments-date mb-5">
     <h2 class="title text-uppercase text-center mt-5">Selecciona la hora</h2>
     <div class="hour">
       <div class="main">
@@ -105,8 +105,10 @@
           <li>9</li>
         </ul>
       </div>
-
     </div>
+  </div>
+  <div class="reservar-btn d-flex justify-content-center">
+      <a href="#">Reserva ahora</a>
   </div>
 </section>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>

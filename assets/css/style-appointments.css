@@ -14,12 +14,20 @@
     --fuentePrincipal: 'Manrope', sans-serif;
     --fuenteSecundaria: 'Playfair Display', serif;
 }
+
+.title-page {
+    font-size: 32px;
+    font-weight: bolder;
+    color: var(--logoLila);
+}
+
 .appointments .title {
     font-size: 20px;
     font-weight: bolder;
 }
 
-.m-carousel .title {
+.appointments-services .sub-title,
+.appointments-stylist .sub-title {
     font-size: 18px;
     font-weight: lighter;
     font-family: var(--fuenteSecundaria);
@@ -53,11 +61,11 @@ width: 100%;
 }
 
 .appointments-services .m-carousel {
-    height: 360px;
+    height: 300px;
 }
 
 .appointments-stylist .m-carousel {
-    height: 580px;
+    height: 530px;
 }
 
 .appointments-services .carousel-item, .appointments-stylist .carousel-item{
@@ -78,7 +86,9 @@ width: 100%;
 }
 
 /* Fecha */
-.appointments-date {
+.appointments-date,
+.appointments-services,
+.appointments-stylist {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -86,7 +96,42 @@ width: 100%;
 
 .available-nonavailable {
     display: flex;
+    font-size: 23px;
+    width: 380px;
+    justify-content: space-between;
+    position: relative;
+    padding: 0 30px;
+    margin: 32px 0 40px 0;
 }
+
+.available,
+.non-available {
+    margin: 0;
+}
+
+.available::before {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    left: -10px;
+    top: 5px;
+    background-color: #FFFFFF;
+    border: .5px solid #000000;
+}
+
+.non-available::before {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    right: 190px;
+    top: 5px;
+    background-color: var(--rosaSalmon);
+}
+
 
 .calendario {
     padding: 30px;
@@ -136,6 +181,38 @@ width: 100%;
 }
 
 /* time */
+.hour {
+    width: 765px;
+    background: var(--White, #FFF);
+    box-shadow: 0px 30px 84px 0px rgba(19, 10, 46, 0.08), 0px 8px 32px 0px rgba(19, 10, 46, 0.07), 0px 3px 14px 0px rgba(19, 10, 46, 0.03), 0px 1px 3px 0px rgba(19, 10, 46, 0.13);
+    padding: 48px 39px;
+    border-radius: 12px;
+}
+
+.hour ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 80px;
+    column-gap: 90px;
+}
+
+.time {
+    padding: 0;
+    margin: 0;
+}
+
 .time li {
-    width: calc(100% / 3);
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e0e6ec;
+    border-radius: 10px;
+    color: #000000;
+    cursor: pointer;
+}
+
+.reservar-btn a {
+    border-radius: 8px;
+    margin-bottom: 140px;
 }

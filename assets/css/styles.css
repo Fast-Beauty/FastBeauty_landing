@@ -254,7 +254,6 @@ ul {
     transition-property: transform, box-shadow;
     transition-duration: .3s;
     z-index: 1;
-    box-shadow: 0 0px 16px 1px rgb(255, 192, 203, 0.6);
 }
 @media (min-width: 768px) {
     .reservar-btn a,

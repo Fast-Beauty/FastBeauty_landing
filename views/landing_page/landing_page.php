@@ -12,7 +12,7 @@
                             Praesent nec odio quis sem tincidunt venenatis. Nunc eleifend fringilla ligula, ac iaculis lorem rutrum id
                         </p>
                         <div class="reservar-btn d-flex justify-content-start">
-                            <a href="#">Reserva ahora</a>
+                            <a href="?c=Appointments&m=index">Reserva ahora</a>
                         </div>
                     </div>
                 </div>
