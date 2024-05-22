@@ -11,7 +11,7 @@
                     <div class=" d-flex align-items-center ">
                         <div class="icon-footer me-2 p-2">
                             <a href=""><span> <i class="text-white bi bi-facebook p-2"></i></span></a>
-                           
+                        
                         </div>
                         <div class="icon-footer me-2 p-2">
                             <a href=""><span><i class="text-white bi bi-twitter p-2"></i></span></a>
@@ -23,7 +23,7 @@
                         </div>
                         <div class="icon-footer p-2 logo-rosa">
                             <a href=""><span> <i class="text-white bi bi-instagram p-2 "></i></span></a>
-                           
+                        
                         </div>
                     </div>
                 </div>

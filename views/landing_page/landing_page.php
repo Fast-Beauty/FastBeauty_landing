@@ -6,13 +6,13 @@
                 <div class="row">
                     <div class="col-md-8">
                         <p class="text-uppercase beige-claro-color fw-bold">bienvenido a fast beauty</p>
-                        <h1 class="fw-bold fuente-secundaria fs-1 ">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        <h1 class="fw-bold fuente-secundaria fs-1 ">FastBeauty es más que belleza; es una experiencia que celebra tu autenticidad.
                         </h1>
                         <p class="text-secondary fs-5 w-100">
-                            Praesent nec odio quis sem tincidunt venenatis. Nunc eleifend fringilla ligula, ac iaculis lorem rutrum id
+                        Fusionamos tradición e innovación para entregarte lo mejor en cuidado personal y belleza. Con nosotros, nace una nueva oportunidad para descubrir tu esencia única.
                         </p>
                         <div class="reservar-btn d-flex justify-content-start">
-                            <a href="#">Reserva ahora</a>
+                            <button>Reserva ahora</button>
                         </div>
                     </div>
                 </div>
@@ -75,7 +75,7 @@
             </div>
         </div>
         <div class="ver-servicios d-flex justify-content-center">
-            <a href="#">Ver mas servicios</a>
+            <button>Ver mas servicios</button>
         </div>
     </div>
 </main>
@@ -191,7 +191,7 @@
                 </div>
             </div>
             <div class="ver-productos d-flex justify-content-center">
-                <a href="#">Ver todos los productos</a>
+                <button>Ver todos los productos</button>
             </div>
         </div>
         <div class="flower1">

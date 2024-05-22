@@ -242,9 +242,9 @@ ul {
 }
 
 
-.reservar-btn a,
-.ver-productos a,
-.ver-servicios a {
+.reservar-btn button,
+.ver-productos button,
+.ver-servicios button {
     background-color: var(--rosaSalmon);
     padding: 20px 30px;
     margin-top: 40px;
@@ -252,21 +252,22 @@ ul {
     color: #28292B;
     font-weight: 900;
     transition-property: transform, box-shadow;
-    transition-duration: .3s;
+    transition: .3s;
+    border: none;
     z-index: 1;
     box-shadow: 0 0px 16px 1px rgb(255, 192, 203, 0.6);
 }
-@media (min-width: 768px) {
-    .reservar-btn a,
-    .ver-productos a, 
-    .ver-servicios a {
+@media (min-width: 768px) { 
+    .reservar-btn button,
+    .ver-productos button,
+    .ver-servicios button {
         letter-spacing: 1.8px;
     }
 } 
 
-.reservar-btn a:hover,
-.ver-productos a:hover,
-.ver-servicios a:hover {
+.reservar-btn button:hover,
+.ver-productos button:hover,
+.ver-servicios button:hover {
     transform: scale(1.1);
     box-shadow: 0 0px 16px 2px rgb(255, 192, 203, 0.9);
 }
@@ -357,6 +358,7 @@ ul {
         grid-template-columns: repeat(4, 1fr);
     }
 } 
+
 
 .producto {
     width: 265px;
@@ -726,4 +728,46 @@ input[type="submit"]:hover {
         bottom: 0;
         transform: translate(40%, 50%);
     }
+}
+
+
+/* productc details */
+
+.container-details{
+    position: relative;
+}
+
+
+.section-produc-detail {
+    background-color: var(--azulClaro);
+    padding: 50px 0 50px 0;
+    position: relative;
+}
+
+
+.product-details {
+    width: 480px;
+    height: 370px;
+    background-size: cover;
+    background-image: url('../images/producto-jabon.svg');
+    margin-right: 25px;
+    border-radius: 20px;
+
+}
+
+.text {
+    
+    height: 370px;
+    background-color: #FFFFFF;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.product-tex {
+    width: 480px;
+    height: 370px;
+    align-items: center;
+    text-align: left;
+    margin-left: 25px;
+    
 }
