@@ -951,4 +951,4 @@ label {
 [id="image3"]:checked~.container [for="image3"] .inner {
     opacity: 1;
     transform: none;
-} */
+}
