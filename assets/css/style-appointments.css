@@ -129,7 +129,7 @@ width: 100%;
     border-radius: 50%;
     right: 190px;
     top: 5px;
-    background-color: var(--rosaSalmon);
+    background-color: var(--gris);
 }
 
 
@@ -170,14 +170,50 @@ width: 100%;
     cursor: pointer;
 }
 
-.calendario .days .block {
-    background-color: var(--rosaSalmon);
+.calendario .days li:hover{
+    background-color: #e6e6e6;
     border-radius: 40px;
+}
+
+.calendario .days .block {
+    background-color: var(--gris);
+    border-radius: 40px;
+    pointer-events: none;
+}
+
+.calendario .days .today {
+    background-color: var(--rosaSalmon);
+    color: #FFFFFF;
+    border-radius: 40px;
+    pointer-events: none;
+}
+
+.calendario .days .select {
+    background-color: var(--logoLila);
+    color: #FFFFFF;
+    border-radius: 40px;
+    pointer-events: none;
+}
+
+.hour .time .select {
+    background-color: var(--logoLila);
+    color: #FFFFFF;
+    border-radius: 10px;
     pointer-events: none;
 }
 
 .calendario .main .weeks {
     font-weight: bold;
+}
+
+.calendario .main .prev-next-month {
+    color: #c3c3c3;
+    pointer-events: none;
+}
+
+.calendario #prev, 
+.calendario #next {
+    cursor: pointer;
 }
 
 /* time */

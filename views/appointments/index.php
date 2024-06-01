@@ -6,22 +6,22 @@
     <h2 class="title text-uppercase text-center">Elige un servicio</h2>
     <h3 class="sub-title text-center">Servicio</h3>
     <div class="m-carousel">
-        <a class="carousel-item" href="#1" style="background-image: url(./assets/images/appointments/haircut.png);"></a>
-        <a class="carousel-item" href="#2" style="background-image: url(./assets/images/appointments/depilacion.png);"></a>
-        <a class="carousel-item" href="#3" style="background-image: url(./assets/images/appointments/pedicure.svg);"></a>
-        <a class="carousel-item" href="#4" style="background-image: url(./assets/images/appointments/maquillaje.png);"></a>
-        <a class="carousel-item" href="#5" style="background-image: url(./assets/images/appointments/tinturado.svg);"></a>
+        <a class="carousel-item" href="#1" id="" data-name="Corte de cabello" style="background-image: url(./assets/images/appointments/haircut.png);"></a>
+        <a class="carousel-item" href="#2" id="" data-name="Depilacion" style="background-image: url(./assets/images/appointments/depilacion.png);"></a>
+        <a class="carousel-item" href="#3" id="" data-name="Pedicure" style="background-image: url(./assets/images/appointments/pedicure.svg);"></a>
+        <a class="carousel-item" href="#4" id="" data-name="Maquillaje" style="background-image: url(./assets/images/appointments/maquillaje.png);"></a>
+        <a class="carousel-item" href="#5" id="" data-name="Tinturado" style="background-image: url(./assets/images/appointments/tinturado.svg);"></a>
     </div>
   </div>
   <div class="appointments-stylist mb-5">
     <h2 class="title text-uppercase text-center mt-5">Elige tu estilista preferido</h2>
     <h3 class="sub-title text-center">Servicio</h3>
     <div class="m-carousel">
-        <a class="carousel-item" href="#1" style="background-image: url(./assets/images/appointments/estilista-1.jpg);"></a>
-        <a class="carousel-item" href="#2" style="background-image: url(./assets/images/appointments/estilista-2.jpg);"></a>
-        <a class="carousel-item" href="#3" style="background-image: url(./assets/images/appointments/estilista-3.jpg);"></a>
-        <a class="carousel-item" href="#4" style="background-image: url(./assets/images/appointments/estilista-4.jpg);"></a>
-        <a class="carousel-item" href="#5" style="background-image: url(./assets/images/appointments/estilista-5.jpg);"></a>
+        <a class="carousel-item" href="#1" data-name="Estilista 1" style="background-image: url(./assets/images/appointments/estilista-1.jpg);"></a>
+        <a class="carousel-item" href="#2" data-name="Estilista 2" style="background-image: url(./assets/images/appointments/estilista-2.jpg);"></a>
+        <a class="carousel-item" href="#3" data-name="Estilista 3" style="background-image: url(./assets/images/appointments/estilista-3.jpg);"></a>
+        <a class="carousel-item" href="#4" data-name="Estilista 4" style="background-image: url(./assets/images/appointments/estilista-4.jpg);"></a>
+        <a class="carousel-item" href="#5" data-name="Estilista 5" style="background-image: url(./assets/images/appointments/estilista-5.jpg);"></a>
     </div>
   </div>
   <div class="appointments-date mb-5">
@@ -34,8 +34,8 @@
       <div class="head">
         <h3 class="Current-date">Mayo 9</h3>
         <div class="icons">
-          <i class="bi bi-chevron-left"></i>
-          <i class="bi bi-chevron-right"></i>
+          <i class="bi bi-chevron-left" id="prev"></i>
+          <i class="bi bi-chevron-right" id="next"></i>
         </div>
       </div>
       <div class="main">
@@ -49,41 +49,7 @@
           <li>Dom</li>
         </ul>
         <ul class="days">
-          <li>28</li>
-          <li>29</li>
-          <li>30</li>
-          <li>1</li>
-          <li>2</li>
-          <li>3</li>
-          <li>4</li>
-          <li>5</li>
-          <li>6</li>
-          <li>7</li>
-          <li class="block">8</li>
-          <li>9</li>
-          <li>10</li>
-          <li>11</li>
-          <li class="block">12</li>
-          <li>13</li>
-          <li>14</li>
-          <li>15</li>
-          <li>16</li>
-          <li>17</li>
-          <li>18</li>
-          <li>19</li>
-          <li>20</li>
-          <li>21</li>
-          <li>22</li>
-          <li>23</li>
-          <li>24</li>
-          <li>25</li>
-          <li>26</li>
-          <li class="block">27</li>
-          <li>28</li>
-          <li>29</li>
-          <li>30</li>
-          <li>31</li>
-          <li>1</li>
+          <!-- <li class="block">8</li> -->
         </ul>
       </div>
 
@@ -108,15 +74,14 @@
     </div>
   </div>
   <div class="reservar-btn d-flex justify-content-center">
-      <a href="#">Reserva ahora</a>
+      <a href="#" class="reserva-cita">Reserva ahora</a>
   </div>
 </section>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script>
   document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.m-carousel');
-    console.log(elems)
     var instances = M.Carousel.init(elems);
-    console.log(M.Carousel)
   });
 </script>
+<script src="./assets/js/appointments.js"></script>
