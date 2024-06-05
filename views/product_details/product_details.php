@@ -1,3 +1,4 @@
+<link rel="stylesheet" type="text/css" href="./assets/css/products.css">
 <section class="section-produc-detail">
 
     <div class="container">
@@ -16,17 +17,18 @@
         <div class="row">
 
             <div class="col-md-5">
+                
                 <!-- Carrousel product -->
                 <input type="radio" id="image1" name="image" checked>
                 <input type="radio" id="image2" name="image">
                 <input type="radio" id="image3" name="image">
 
-                <div class="containerdetails">
+                <div class="containerdetails product-detail">
                     <div class="featured-wrapper">
                         <ul class="featured-list">
                             <li>
                                 <figure>
-                                    <img src="./assets/images/producto-jabon.svg" alt="">
+                                    <img src="./assets/images/producto-pantene.svg" alt="">
                                 </figure>
                             </li>
                             <li>
@@ -36,7 +38,7 @@
                             </li>
                             <li>
                                 <figure>
-                                    <img src="./assets/images/producto-jabon.svg" alt="">
+                                    <img src="./assets/images/producto-desodorante.svg" alt="">
                                 </figure>
                             </li>
                         </ul>
@@ -89,8 +91,8 @@
                             </label>
                         </li>
                     </ul>
-                </div>
-                <!-- Carrousel product -->
+                </div> 
+                <!-- End Carrousel product -->
             </div>
 
             <div class="col-md-5">
