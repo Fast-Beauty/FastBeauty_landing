@@ -8,7 +8,7 @@
         <p>No hay servicios aún, estamos trabajando en ello</p>
     </div>
     <div class="container">
-        <?php foreach($this->modelosvc->listar() as $datos): ?>
+        <?php foreach($this->modelosvc->listarServices() as $datos): ?>
         <div class="servicio_container d-flex justify-content-between align-items-center">
             <div class="servicio_info">
                 <h1 class="servicio_titulo fuente-secundaria fw-bolder"><?=$datos['name']?></h1>
