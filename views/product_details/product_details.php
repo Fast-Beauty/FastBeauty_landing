@@ -1,8 +1,6 @@
 <link rel="stylesheet" type="text/css" href="./assets/css/products.css">
 <section class="section-produc-detail">
 
-    <div class="container">
-
         <!-- Migas de pan -->
         <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);"
             aria-label="breadcrumb">
@@ -14,98 +12,83 @@
         </nav>
         <!-- End Migas de pan -->
 
-        <div class="row">
+        <input type="radio" id="image1" name="image" checked>
+        <input type="radio" id="image2" name="image">
+        <input type="radio" id="image3" name="image">
 
-            <div class="col-md-5">
-                
-                <!-- Carrousel product -->
-                <input type="radio" id="image1" name="image" checked>
-                <input type="radio" id="image2" name="image">
-                <input type="radio" id="image3" name="image">
-
-                <div class="containerdetails product-detail">
-                    <div class="featured-wrapper">
-                        <ul class="featured-list">
-                            <li>
-                                <figure>
-                                    <img src="./assets/images/producto-pantene.svg" alt="">
-                                </figure>
-                            </li>
-                            <li>
-                                <figure>
-                                    <img src="./assets/images/producto-jabon.svg" alt="">
-                                </figure>
-                            </li>
-                            <li>
-                                <figure>
-                                    <img src="./assets/images/producto-desodorante.svg" alt="">
-                                </figure>
-                            </li>
-                        </ul>
-                        <ul class="arrows">
-                            <li>
-                                <label for="image1"></label>
-                            </li>
-                            <li>
-                                <label for="image2"></label>
-                            </li>
-                            <li>
-                                <label for="image3"></label>
-                            </li>
-                        </ul>
-                        <ul class="dots">
-                            <li>
-                                <label for="image1"></label>
-                            </li>
-                            <li>
-                                <label for="image2"></label>
-                            </li>
-                            <li>
-                                <label for="image3"></label>
-                            </li>
-                        </ul>
-                    </div>
-                    <ul class="thumb-list">
+        
+        <div class="container d-flex container-detail">
+            <div class="imgs-product-detail">
+                <div class="featured-wrapper">
+                    <ul class="featured-list">
                         <li>
-                            <label for="image1">
+                            <figure>
                                 <img src="./assets/images/producto-jabon.svg" alt="">
-                                <span class="outer">
-                                    <span class="inner">Caption1</span>
-                                </span>
-                            </label>
+                            </figure>
                         </li>
                         <li>
-                            <label for="image2">
+                            <figure>
                                 <img src="./assets/images/producto-jabon.svg" alt="">
-                                <span class="outer">
-                                    <span class="inner">Caption2</span>
-                                </span>
-                            </label>
+                            </figure>
                         </li>
                         <li>
-                            <label for="image3">
+                            <figure>
                                 <img src="./assets/images/producto-jabon.svg" alt="">
-                                <span class="outer">
-                                    <span class="inner">Caption3</span>
-                                </span>
-                            </label>
+                            </figure>
                         </li>
                     </ul>
-                </div> 
-                <!-- End Carrousel product -->
-            </div>
+                    <ul class="arrows">
+                        <li>
+                            <label for="image1"></label>
+                        </li>
+                        <li>
+                            <label for="image2"></label>
+                        </li>
+                        <li>
+                            <label for="image3"></label>
+                        </li>
+                    </ul>
+                    <ul class="dots">
+                        <li>
+                            <label for="image1"></label>
+                        </li>
+                        <li>
+                            <label for="image2"></label>
+                        </li>
+                        <li>
+                            <label for="image3"></label>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="thumb-list">
+                    <li>
+                        <label for="image1">
+                            <img src="./assets/images/producto-jabon.svg" alt="">
+                            <span class="outer"></span>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="image2">
+                            <img src="./assets/images/producto-jabon.svg" alt="">
+                            <span class="outer"></span>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="image3">
+                            <img src="./assets/images/producto-jabon.svg" alt="">
+                            <span class="outer"></span>
+                        </label>
+                    </li>
+                </ul>
 
-            <div class="col-md-5">
-                <div class="product-tex">
+            </div>
+            <div class="product-tex">
                     <h4>Jabón</h4>
                     <p>For Soft, smooth skin</p>
                     <p> $10.000 </p>
                 </div>
             </div>
-
-        </div>
-
-    </div>
+        <!-- End Carrousel product -->
 
     <div class="flower2">
         <img src="assets/images/Flower2.svg" alt="">

@@ -1,42 +1,4 @@
 
-/* productc details */
-
-.container-details{
-    position: relative;
-}
-
-
-.section-produc-detail {
-    background-color: var(--azulClaro);
-    padding: 50px 0 50px 0;
-    position: relative;
-}
-
-.text {
-
-    height: 250px;
-    background-color: #FFFFFF;
-    margin-top: 50px;
-    text-align: center;
-}
-
-.product-tex {
-    width: 480px;
-    height: 370px;
-    align-items: center;
-    text-align: left;
-    margin-left: 25px;
-    
-}
-
-:root {
-    /* --white: #fff; */
-    --red: #e74c3c;
-    --black: #000;
-    --img-color: #ededed;
-    --overlay: rgba(0, 0, 0, 0.75);
-}
-
 * {
     padding: 0;
     margin: 0;
@@ -45,13 +7,14 @@
 
 ul {
     list-style: none;
+    padding: 0;
 }
 
-.product-detail img {
+img {
     display: block;
     max-width: 100%;
     height: auto;
-    background-color: var(--img-color);
+    /* background-color: #ededed; */
     border-radius: 20px;
 }
 
@@ -71,16 +34,9 @@ input[type="radio"] {
     left: -9999px;
 }
 
-body {
-    color: var(--white);
-    /* margin: 20px 0; */
-    font-family: sans-serif;
-}
 
-.containerdetails {
-    max-width: 450px;
-    padding: 0 20px;
-    /* margin: 0 auto; */
+.imgs-product-detail {
+    width: 500px;
 }
 
 /* SLIDESHOW
@@ -108,11 +64,11 @@ body {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    color: var(--black);
+    color: #000;
     background-position: center;
     background-repeat: no-repeat;
     background-size: 24px 24px;
-    background-color: var(--white);
+    background-color: #FFFFFF;
     opacity: 0.5;
     transition: opacity 0.25s;
 }
@@ -142,7 +98,7 @@ body {
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    border: 1px solid var(--white);
+    border: 1px solid #FFFFFF;
     transition: background 0.25s;
 }
 
@@ -181,6 +137,10 @@ body {
     transition: all 0.25s;
 }
 
+.container-detail {
+    gap: 10%;
+}
+
 /* MIMIC CLICK EVENT
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
 [id="image1"]:checked~.container .featured-list li:nth-child(1),
@@ -208,13 +168,13 @@ body {
 [id="image1"]:checked~.container .dots [for="image1"],
 [id="image2"]:checked~.container .dots [for="image2"],
 [id="image3"]:checked~.container .dots [for="image3"] {
-    background: currentColor;
+    background: #FFC0CB;
 }
 
 [id="image1"]:checked~.container [for="image1"] .outer,
 [id="image2"]:checked~.container [for="image2"] .outer,
 [id="image3"]:checked~.container [for="image3"] .outer {
-    background: var(--overlay);
+    background: rgba(0, 0, 0, 0.75);
 }
 
 [id="image1"]:checked~.container [for="image1"] .inner,
