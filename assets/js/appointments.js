@@ -75,6 +75,8 @@ document.addEventListener('DOMContentLoaded', () => {
         if(e.target.classList.contains('active')) {
             cita.name = `${servicio.dataset.name}`
         }
+
+        marcarServicio(e.target);
     }
 
     function seleccionarEstilista(e) {
@@ -82,6 +84,8 @@ document.addEventListener('DOMContentLoaded', () => {
         if(e.target.classList.contains('active')) {
             cita.stylist = `${estilista.dataset.name}`
         }
+
+        marcarEstilista(e.target)
     }
 
     function seleccionarDia(e) {
@@ -123,6 +127,39 @@ document.addEventListener('DOMContentLoaded', () => {
             }
             return
         }
+        console.log(cita)
+    }
+
+
+    function marcarServicio(componente) {
+        const marcado = servicios.querySelectorAll('.marcado');
+        if(!componente.classList.contains('marcado')) {
+            componente.classList.add('marcado');
+            componente.style.outline = '3px solid #3483fa';
+        } else {
+            componente.classList.remove('marcado');
+            componente.style.outline = 'none';
+            cita.name = '';
+        }
+        marcado.forEach(marcado => {
+            marcado.classList.remove('marcado');
+            marcado.style.outline = 'none';
+        })
+    }
+    function marcarEstilista(componente) {
+        const marcado = estilistas.querySelectorAll('.marcado');
+        if(!componente.classList.contains('marcado')) {
+            componente.classList.add('marcado');
+            componente.style.outline = '3px solid #3483fa';
+        } else {
+            componente.classList.remove('marcado');
+            componente.style.outline = 'none';
+            cita.stylist = '';
+        }
+        marcado.forEach(marcado => {
+            marcado.classList.remove('marcado');
+            marcado.style.outline = 'none';
+        })
     }
 
 })

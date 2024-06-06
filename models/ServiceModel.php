@@ -12,9 +12,4 @@ class ServiceModel {
         $datos = $sql->fetch_all(MYSQLI_ASSOC);
         return $datos;
     }
-    // public function listarImages() {
-    //     $sql = $this->svc->query("select * from services_images"); 
-    //     $datos = $sql->fetch_all(MYSQLI_ASSOC);
-    //     return $datos;
-    // }
 }

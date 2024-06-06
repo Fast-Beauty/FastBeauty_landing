@@ -132,6 +132,9 @@ width: 100%;
     background-color: var(--gris);
 }
 
+.outline {
+    outline: 3px solid #3483fa;
+}
 
 .calendario {
     padding: 30px;

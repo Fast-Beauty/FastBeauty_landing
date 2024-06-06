@@ -6,9 +6,9 @@ class AppointmentsController{
 
     private $modelosvc;
 
-    // public function __CONSTRUCT() {
-    //     $this->modelosvc = new AppointmentsModel();
-    // }
+    public function __CONSTRUCT() {
+        $this->modelosvc = new AppointmentsModel();
+    }
 
     public function index(){  
         require_once('views/components/layout/head.php');

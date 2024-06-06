@@ -6,11 +6,13 @@
     <h2 class="title text-uppercase text-center">Elige un servicio</h2>
     <h3 class="sub-title text-center">Servicio</h3>
     <div class="m-carousel">
-        <a class="carousel-item" href="#1" id="" data-name="Corte de cabello" style="background-image: url(./assets/images/appointments/haircut.png);"></a>
-        <a class="carousel-item" href="#2" id="" data-name="Depilacion" style="background-image: url(./assets/images/appointments/depilacion.png);"></a>
-        <a class="carousel-item" href="#3" id="" data-name="Pedicure" style="background-image: url(./assets/images/appointments/pedicure.svg);"></a>
-        <a class="carousel-item" href="#4" id="" data-name="Maquillaje" style="background-image: url(./assets/images/appointments/maquillaje.png);"></a>
-        <a class="carousel-item" href="#5" id="" data-name="Tinturado" style="background-image: url(./assets/images/appointments/tinturado.svg);"></a>
+    <?php 
+    foreach($this->modelosvc->listarServicios() as $datos): 
+      foreach( $this->modelosvc->listarImagen($datos['id']) as $img):?>
+        <a class="carousel-item" href="#" id="<?=$datos['id']?>" data-name="<?=$datos['name']?>" style="background-image: url(./assets/images/appointments/<?=$img['url']?>);"></a>
+    <?php 
+      endforeach;
+    endforeach; ?>
     </div>
   </div>
   <div class="appointments-stylist mb-5">
