@@ -1,6 +1,6 @@
 <?php
 
-class ServiceModel {
+class AppointmentsModel {
     private $svc;
 
     public function __CONSTRUCT() {

@@ -9,7 +9,7 @@
     <?php 
     foreach($this->modelosvc->listarServicios() as $datos): 
       foreach( $this->modelosvc->listarImagen($datos['id']) as $img):?>
-        <a class="carousel-item" href="#" id="<?=$datos['id']?>" data-name="<?=$datos['name']?>" style="background-image: url(./assets/images/appointments/<?=$img['url']?>);"></a>
+        <a class="carousel-item" href="#" id="<?=$datos['id']?>" data-name="<?=$datos['name']?>" style="background-image: url(./assets/images/services/<?=$img['url']?>);"></a>
     <?php 
       endforeach;
     endforeach; ?>

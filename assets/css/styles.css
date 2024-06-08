@@ -229,16 +229,16 @@ ul {
 }
 
 .servicio1 {
-    background-image: url('../images/service-corte.svg');
+    background-image: url('../images/services/service-corte.svg');
 }
 .servicio2 {
-    background-image: url('../images/service-pedicure.svg');
+    background-image: url('../images/services/service-pedicure.svg');
 }
 .servicio3 {
-    background-image: url('../images/service-tinturado.svg');
+    background-image: url('../images/services/service-tinturado.svg');
 }
 .servicio4 {
-    background-image: url('../images/service-maquillaje.svg');
+    background-image: url('../images/services/service-maquillaje.svg');
 }
 
 
@@ -461,7 +461,7 @@ ul {
 
 /* Pagina servicios */
 .servicios__header {
-    background-image: url('./images/header-services.svg');
+    background-image: linear-gradient(rgba(43, 34, 53, 1), rgba(255, 223, 229, 1)), url('./images/header-services.svg');
     background-color: var(--rosaSalmonOpaco);
     padding: 80px 0;
 }
@@ -469,7 +469,7 @@ ul {
 .servicios__header .subtitulo-services {
     font-family: var(--fuentePrincipal);
     font-size: 15px;
-    color: var(--gris);
+    color: white;
     width: 650px;
     margin: 0 auto;
 }
@@ -477,7 +477,7 @@ ul {
     font-weight: bold;
     font-family: var(--fuenteSecundaria);
     font-size: 55px;
-    color: var(--gris);
+    color: white;
     width: 650px;
     margin: 0 auto;
 }
@@ -498,12 +498,20 @@ ul {
     flex-direction: row-reverse;
 }
 
+.servicio_info {
+    position: relative;
+}
+
 .servicio_info h1 {
     font-size: 45px;
+    position: relative;
+    z-index: 1;
 }
 
 .servicio_datos .dato {
     margin-bottom: 32px;
+    position: relative;
+    z-index: 1;
 }
 
 .servicio_datos .icono {
@@ -542,6 +550,17 @@ ul {
     bottom: 0;
     background-color: var(--rosaSalmon);
     transform: translate(30px, -30px);
+}
+
+.servicios_circle {
+    background-color: #FFC9C5;
+    border-radius: 50%;
+    width: 422px;
+    height: 422px;
+    filter: blur(50px);
+    opacity: 0.45;
+    position: absolute;
+    top: -10%;
 }
 
 /* ------------------------ */
