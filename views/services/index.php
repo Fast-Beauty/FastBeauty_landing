@@ -18,13 +18,13 @@
                 <div class="servicio_datos">
                     <div class="dato precio d-flex align-items-center">
                         <div class="icono icono_precio d-flex justify-content-center">
-                            <img src="assets/images/icono-precio-servicios.svg" alt="Icono precio">
+                            <img src="assets/images/services/icono-precio-servicios.svg" alt="Icono precio">
                         </div>
                         <p class="fw-semibold fs-5 text-uppercase">Desde $<?=$datos['price']?></p>
                     </div>
                     <div class="dato reviews d-flex align-items-center">
                         <div class="icono icono_review d-flex justify-content-center">
-                            <img src="assets/images/icono-reviews-servicio.svg" alt="Icono reseñas">
+                            <img src="assets/images/services/icono-reviews-servicio.svg" alt="Icono reseñas">
                         </div>
                         <div class="review_date">
                             <p class="fw-bolder fs-2 text-uppercase fuente-secundaria">4.3</p>
@@ -33,7 +33,7 @@
                     </div>
                     <div class="dato tiempo d-flex align-items-center">
                         <div class="icono icono_tiempo d-flex justify-content-center">
-                            <img src="assets/images/icono-tiempo-servicios.svg" alt="Icono tiempo">
+                            <img src="assets/images/services/icono-tiempo-servicios.svg" alt="Icono tiempo">
                         </div>
                         <p class="fw-bolder fs-2 fuente-secundaria"><?=$datos['time']?> Mins</p>
                     </div>
@@ -44,7 +44,7 @@
                 </div>
             </div>
             <div class="servicio_img">
-                <img src="./assets/images/<?=$img['url']?>" alt="imagen corte de cabello">
+                <img src="./assets/images/services/<?=$img['url']?>" alt="imagen corte de cabello">
             </div>
         </div>
         <?php 
