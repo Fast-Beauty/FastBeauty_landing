@@ -8,7 +8,10 @@
         <p>No hay servicios aún, estamos trabajando en ello</p>
     </div>
     <div class="container">
-        <?php foreach($this->modelosvc->listar() as $datos): ?>
+        <?php 
+        foreach($this->modelosvc->listar() as $datos): 
+            foreach($this->modelosvc->listarImagen($datos['id']) as $img):
+        ?>
         <div class="servicio_container d-flex justify-content-between align-items-center">
             <div class="servicio_info">
                 <h1 class="servicio_titulo fuente-secundaria fw-bolder"><?=$datos['name']?></h1>
@@ -35,15 +38,19 @@
                         <p class="fw-bolder fs-2 fuente-secundaria"><?=$datos['time']?> Mins</p>
                     </div>
                 </div>
+                <div class="servicios_circle"></div>
                 <div class="reservar-btn d-flex justify-content-start">
-                    <a href="#">Realizar reservación</a>
+                    <a href="?c=Appointments&m=index">Realizar reservación</a>
                 </div>
             </div>
             <div class="servicio_img">
-                <img src="./assets/images/service-corte.svg" alt="imagen corte de cabello">
+                <img src="./assets/images/<?=$img['url']?>" alt="imagen corte de cabello">
             </div>
         </div>
-        <?php endforeach; ?>
+        <?php 
+            endforeach; 
+        endforeach; 
+        ?>    
     </div>
 </section>
 <script src="./assets/js/services.js"></script>
