@@ -11,23 +11,23 @@
                     <div class=" d-flex align-items-center ">
                         <div class="icon-footer me-2 p-2">
                             <a href=""><span> <i class="text-white bi bi-facebook p-2"></i></span></a>
-                        
+
                         </div>
                         <div class="icon-footer me-2 p-2">
                             <a href=""><span><i class="text-white bi bi-twitter p-2"></i></span></a>
-                            
+
                         </div>
                         <div class="icon-footer me-2 p-2">
                             <a href=""><span><i class="text-white bi bi-linkedin p-2"></i></span></a>
-                            
+
                         </div>
                         <div class="icon-footer p-2 logo-rosa">
                             <a href=""><span> <i class="text-white bi bi-instagram p-2 "></i></span></a>
-                        
+
                         </div>
                     </div>
                 </div>
-            <div class="line-footer mt-5"></div>
+                <div class="line-footer mt-5"></div>
 
                 <div class="col-md-3 pt-5">
                     <div class="text-white">
@@ -38,7 +38,7 @@
                             <li>Inicio</li>
                             <li class="pt-1">Servicios</li>
                             <li class="pt-1">Productos</li>
-                            <li class="pt-1" >Acerca</li>
+                            <li class="pt-1">Acerca</li>
                             <li class="pt-1">Sucursales</li>
                             <li class="pt-1">Contacto</li>
                         </ul>
@@ -60,10 +60,10 @@
                             <p class="ps-1">(+57) 323-4567-900</p>
                         </div>
                         <div>
-                           
+
                         </div>
                     </div>
-                   
+
                 </div>
                 <div class="col-md-3 pt-5 d-flex justify-content-center">
                     <div class="text-white ">
@@ -74,10 +74,10 @@
                             <p>Dom: 9am-6pm</p>
                         </div>
                         <div>
-                           
+
                         </div>
                     </div>
-                   
+
                 </div>
             </div>
         </div>

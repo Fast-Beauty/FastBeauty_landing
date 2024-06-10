@@ -1,3 +1,55 @@
+.section-produc-detail {
+    background-color: var(--azulClaro);
+    padding: 50px 0 50px 0;
+    position: relative;
+}
+
+/* .product-tex {
+    width: 280px;
+    height: 170px;
+    align-items: center;
+    text-align: left;
+    margin-left: 25px;
+    
+}  */
+
+
+
+.text {
+
+    height: 250px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.line {
+    margin-top: 20px;
+}
+
+
+h4, .price {
+    font-weight:bold;
+    font-size: 25px;
+    
+}
+
+.prom {
+    text-indent: 10px;
+    font-size: 25px;
+}
+
+.off {
+    color: red;
+    text-indent: 10px;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.container-price {
+    display: flex;
+    
+}
+
 
 * {
     padding: 0;
@@ -138,7 +190,7 @@ input[type="radio"] {
 }
 
 .container-detail {
-    gap: 10%;
+    gap: 5%;
 }
 
 /* MIMIC CLICK EVENT
@@ -168,7 +220,7 @@ input[type="radio"] {
 [id="image1"]:checked~.container .dots [for="image1"],
 [id="image2"]:checked~.container .dots [for="image2"],
 [id="image3"]:checked~.container .dots [for="image3"] {
-    background: #FFC0CB;
+    background: #D6C3B8;
 }
 
 [id="image1"]:checked~.container [for="image1"] .outer,

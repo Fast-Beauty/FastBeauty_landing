@@ -85,8 +85,9 @@
         <div class="acerca d-flex flex-column gap-5 flex-lg-row align-items-center">
             <div class="info-acerca">
                 <p class="text-uppercase text-black fw-bold">Acerca de</p>
-                <h1 class="text-black fw-bold fuente-secundaria fs-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
-                <p class="gris-color fs-5">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, buying to injected humour, or randomised words which don't look even many desktop publishing packages.</p>
+                <h1 class="text-black fw-bold fuente-secundaria fs-1">¡Creemos en los grandes cambios! te asesoramos para dar tu mejor imagen con el sello de Fast Beauty.</h1>
+                <p class="gris-color fs-5">Somos una empresa que cuenta con un selecto grupo de profesionales, altamente capacitados, para ofrecerles el mejor servicio de peluquería y spa. 
+                    Un lugar mágico donde obtienes la atención, asesoría y calidad que garantizan nuestros expertos en corte y color, manicura y pedicura, maquillaje, peinados y tratamientos de belleza.</p>
                 <div class="iconos-acerca d-flex justify-content-center gap-4 mt-lg-5">
                     <div class="icn icn1">
                         <div class="img-icon rounded-circle p-3 mx-auto">
