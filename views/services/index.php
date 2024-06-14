@@ -44,7 +44,7 @@
                 </div>
             </div>
             <div class="servicio_img">
-                <img src="./assets/images/services/<?=$img['url']?>" alt="imagen corte de cabello">
+                <img src="data:<?= $img['tipo_imagen']; ?>;base64,<?= base64_encode($img['imagen']); ?>" alt="Imagen">
             </div>
         </div>
         <?php 
