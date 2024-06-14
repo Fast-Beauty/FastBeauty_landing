@@ -229,16 +229,16 @@ ul {
 }
 
 .servicio1 {
-    background-image: url('../images/services/service-corte.svg');
+    background-image: url('../images/services/service-corte.jpg');
 }
 .servicio2 {
-    background-image: url('../images/services/service-pedicure.svg');
+    background-image: url('../images/services/service-manicure.jpg');
 }
 .servicio3 {
-    background-image: url('../images/services/service-tinturado.svg');
+    background-image: url('../images/services/service-tinturado.jpg');
 }
 .servicio4 {
-    background-image: url('../images/services/service-maquillaje.svg');
+    background-image: url('../images/services/service-maquillaje.jpg');
 }
 
 

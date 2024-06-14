@@ -43,16 +43,16 @@
                     <h4 class="fuente-secundaria fw-bold">Corte de cabello</h4>
                 </div>
                 <div class="imagen-servicio relative">
-                    <img src="./assets/images/services/service-corte.svg" alt="imagen corte de cabello" height="192px">
+                    <img src="./assets/images/services/service-corte.jpg" alt="imagen corte de cabello" height="192px">
                 </div>
             </div>
             <div class="servicio relative mx-auto d-flex align-items-center justify-content-between servicio2">
                 <div class="info-servicio relative beige-claro-color">
                     <p class="text-uppercase fw-normal">Desde $15,000</p>
-                    <h4 class="fuente-secundaria fw-bold">Pedicure</h4>
+                    <h4 class="fuente-secundaria fw-bold">Manicure</h4>
                 </div>
                 <div class="imagen-servicio relative">
-                    <img src="./assets/images/services/service-pedicure.svg" alt="imagen Pedicure" height="192px">
+                    <img src="./assets/images/services/service-manicure.jpg" alt="imagen Manicure" height="192px">
                 </div>
             </div>
             <div class="servicio relative mx-auto d-flex align-items-center justify-content-between servicio3">
@@ -61,7 +61,7 @@
                     <h4 class="fuente-secundaria fw-bold">Tinturado</h4>
                 </div>
                 <div class="imagen-servicio relative">
-                <img src="./assets/images/services/service-tinturado.svg" alt="imagen Tinturado" height="192px">
+                <img src="./assets/images/services/service-tinturado.jpg" alt="imagen Tinturado" height="192px">
                 </div>
             </div>
             <div class="servicio relative mx-auto d-flex align-items-center justify-content-between servicio4">
@@ -70,7 +70,7 @@
                     <h4 class="fuente-secundaria fw-bold">Maquillaje</h4>
                 </div>
                 <div class="imagen-servicio relative">
-                <img src="./assets/images/services/service-maquillaje.svg" alt="imagen Maquillaje" height="192px">
+                <img src="./assets/images/services/service-maquillaje.jpg" alt="imagen Maquillaje" height="192px">
                 </div>
             </div>
         </div>
