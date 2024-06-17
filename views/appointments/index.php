@@ -8,8 +8,8 @@
     <div class="m-carousel">
     <?php 
     foreach($this->modelosvc->listarServicios() as $datos): 
-      foreach( $this->modelosvc->listarImagen($datos['id']) as $img):?>
-        <a class="carousel-item" href="#" id="<?=$datos['id']?>" data-name="<?=$datos['name']?>" style="background-image: url(./assets/images/services/<?=$img['url']?>);"></a>
+      foreach( $this->modelosvc->listarImagenServicio($datos['id']) as $img):?>
+        <a class="carousel-item" href="javascript:void(0);" id="<?=$datos['id']?>" data-name="<?=$datos['name']?>" style="background-image: url('data:<?= $img['tipo_imagen']; ?>;base64,<?= base64_encode($img['imagen']); ?>');"></a>
     <?php 
       endforeach;
     endforeach; ?>
@@ -19,11 +19,13 @@
     <h2 class="title text-uppercase text-center mt-5">Elige tu estilista preferido</h2>
     <h3 class="sub-title text-center">Servicio</h3>
     <div class="m-carousel">
-        <a class="carousel-item" href="#1" data-name="Estilista 1" style="background-image: url(./assets/images/appointments/estilista-1.jpg);"></a>
-        <a class="carousel-item" href="#2" data-name="Estilista 2" style="background-image: url(./assets/images/appointments/estilista-2.jpg);"></a>
-        <a class="carousel-item" href="#3" data-name="Estilista 3" style="background-image: url(./assets/images/appointments/estilista-3.jpg);"></a>
-        <a class="carousel-item" href="#4" data-name="Estilista 4" style="background-image: url(./assets/images/appointments/estilista-4.jpg);"></a>
-        <a class="carousel-item" href="#5" data-name="Estilista 5" style="background-image: url(./assets/images/appointments/estilista-5.jpg);"></a>
+    <?php 
+    foreach($this->modelosvc->listarEstilistas() as $datos): 
+      foreach( $this->modelosvc->listarImagenEstilista($datos['id']) as $img):?>
+        <a class="carousel-item" href="javascript:void(0);" id="<?=$datos['id']?>" data-name="<?=$datos['users_id']?>" style="background-image: url('data:<?= $img['tipo_imagen']; ?>;base64,<?= base64_encode($img['imagen']); ?>');"></a>
+    <?php 
+      endforeach;
+    endforeach; ?>
     </div>
   </div>
   <div class="appointments-date mb-5">
@@ -62,22 +64,23 @@
     <div class="hour">
       <div class="main">
         <ul class="time">
-          <li>1</li>
-          <li>2</li>
-          <li>3</li>
-          <li>4</li>
-          <li>5</li>
-          <li>6</li>
-          <li>7</li>
-          <li>8</li>
-          <li>9</li>
+          <li>6:00</li>
+          <li>8:00</li>
+          <li>10:00</li>
+          <li>12:00</li>
+          <li>15:00</li>
+          <li>17:00</li>
+          <li>19:00</li>
+          <li>21:00</li>
+          <li>23:00</li>
         </ul>
       </div>
     </div>
   </div>
   <div class="reservar-btn d-flex justify-content-center">
-      <a href="#" class="reserva-cita">Reserva ahora</a>
+      <a href="javascript:void(0);" class="reserva-cita">Reserva ahora</a>
   </div>
+  <div class="mensaje-appointment alert" role="alert"></div>
 </section>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script>
