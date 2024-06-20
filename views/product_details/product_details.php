@@ -94,6 +94,10 @@
                 <p class="off">50% OFF</p>
             </div>
 
+            <div id="availability" class=""> 
+                <span class="a-size-medium a-color-success">(4 Disponibles)</span>
+            </div>
+
             <hr class="line">
 
             <div class="">
@@ -102,7 +106,7 @@
                     <div class="container">
                         <div class="gris-color">
                             <h6 class="titulo-descripcion">Descripción</h6>
-                            
+
                         </div>
 
                         <p class="text-descripcion">Elimina el 99.9% sin resecar la piel. La fórmula humectante de Dove
