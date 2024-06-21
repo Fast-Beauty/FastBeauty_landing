@@ -26,11 +26,6 @@
                 <li class="nav-item d-flex fw-bold align-items-center">
                     <a class="nav-link gris-color" href="#">Sucursales</a>
                 </li>
-                <li class="nav-item d-flex align-items-center fw-bold rsalmon">
-                        <a class="nav-link" href="?c=Login&m=login">
-                            <span class="d-flex justify-content-end text-black text-uppercase" ><i class="bi bi-person pe-3"></i>Ingresar</span>
-                        </a>
-                </li>
             </ul>
         </div>
     </div>
