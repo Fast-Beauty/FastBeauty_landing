@@ -1,5 +1,5 @@
-<link rel="stylesheet" type="text/css" href="./assets/css/productsDetails.css">
-<section class="section-produc-detail">
+<link rel="stylesheet" type="text/css" href="./assets/css/ProductsDetails.css">
+<section class="section-product-detail">
 
     <!-- Migas de pan -->
     <div class="container">
@@ -7,7 +7,7 @@
             aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="?c=Landing&m=landing">Home</a></li>
-                <li class="breadcrumb-item"><a href="?c=Product&m=product">Productos</a></li>
+                <li class="breadcrumb-item"><a href="?c=ProductsDetails&m=index">Productos</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Jabones</li>
             </ol>
         </nav>
@@ -22,20 +22,25 @@
     <div class="container d-flex container-detail">
         <div class="imgs-product-detail">
             <div class="featured-wrapper">
+            <?php
+                        foreach ($this->modelosvc->listarProductos() as $datos) :
+                            foreach ($this->modelosvc->listarImagenProducto($datos['id']) as $img) :
+
+                        ?>
                 <ul class="featured-list">
                     <li>
                         <figure>
-                            <img src="./assets/images/producto-jabon.svg" alt="">
+                        <img src="data:<?= $img['tipo_imagen']; ?>;base64,<?= base64_encode($img['imagen']); ?>" alt="Imagen">
                         </figure>
                     </li>
                     <li>
                         <figure>
-                            <img src="./assets/images/producto-jabon.svg" alt="">
+                        <img src="data:<?= $img['tipo_imagen']; ?>;base64,<?= base64_encode($img['imagen']); ?>" alt="Imagen">
                         </figure>
                     </li>
                     <li>
                         <figure>
-                            <img src="./assets/images/producto-jabon.svg" alt="">
+                        <img src="data:<?= $img['tipo_imagen']; ?>;base64,<?= base64_encode($img['imagen']); ?>" alt="Imagen">
                         </figure>
                     </li>
                 </ul>
@@ -65,37 +70,40 @@
             <ul class="thumb-list">
                 <li>
                     <label for="image1">
-                        <img src="./assets/images/producto-jabon.svg" alt="">
+                    <img src="data:<?= $img['tipo_imagen']; ?>;base64,<?= base64_encode($img['imagen']); ?>" alt="Imagen">
                         <span class="outer"></span>
                     </label>
                 </li>
                 <li>
                     <label for="image2">
-                        <img src="./assets/images/producto-jabon.svg" alt="">
+                    <img src="data:<?= $img['tipo_imagen']; ?>;base64,<?= base64_encode($img['imagen']); ?>" alt="Imagen">
                         <span class="outer"></span>
                     </label>
                 </li>
                 <li>
                     <label for="image3">
-                        <img src="./assets/images/producto-jabon.svg" alt="">
+                    <img src="data:<?= $img['tipo_imagen']; ?>;base64,<?= base64_encode($img['imagen']); ?>" alt="Imagen">
                         <span class="outer"></span>
                     </label>
                 </li>
             </ul>
-
+            <?php
+                            endforeach;
+                        endforeach;
+                        ?>
         </div>
         <div class="product-text">
             <h4>Jabón</h4>
-            <p class="gris-color">For Soft, smooth skin</p>
+            <!-- <p class="gris-color">For Soft, smooth skin</p> -->
 
             <div class="container-price">
-                <p class="price"> $6,000 </p>
-                <del class="prom price gris-color">$ 12,000</del>
-                <p class="off">50% OFF</p>
+                <p class="price"> $<?=$datos['price']?></p>
+                <!-- <del class="prom price gris-color">$ 12,000</del>
+                <p class="off">50% OFF</p> -->
             </div>
 
             <div id="availability" class=""> 
-                <span class="a-size-medium a-color-success">(4 Disponibles)</span>
+                <span class="a-size-medium a-color-success">(<?=$datos['quantity']?> disponibles) </span>
             </div>
 
             <hr class="line">
@@ -109,18 +117,10 @@
 
                         </div>
 
-                        <p class="text-descripcion">Elimina el 99.9% sin resecar la piel. La fórmula humectante de Dove
-                            está
-                            enriquecida con un
-                            ingrediente
-                            antibacterial, brindándote protección y cuidado para una piel suave, hidratada y protegida.
-                            Esta suave fórmula limpiadora contiene 1/4 de crema humectante para darte una piel más
-                            suave, sedosa y
-                            de
-                            apariencia más saludable.</p>
+                        <p class="text-descripcion"><?=$datos['description']?></p>
                     </div>
                 </div>
-                <!-- Descripcion -->
+                <!-- End Descripcion -->
             </div>
         </div>
     </div>
