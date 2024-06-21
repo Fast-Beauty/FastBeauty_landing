@@ -1,0 +1,264 @@
+:root {
+    --rosaSalmon: #FFC0CB;
+    --azulClaro: #E6F4F1;
+    --rosaSalmonOpaco: #FFDFE5;
+    --rosaPalo: #D6C3B8;
+    --rosaCoral: #EEC1B6;
+    --beigeClaro: #F0E8E2;
+    --gris: #7C838A;
+
+    --logoRosa: #E5B1DE;
+    --logoLila: #2B2235;
+    --rosaOpaco: #F2D8EF;
+
+    --fuentePrincipal: 'Manrope', sans-serif;
+    --fuenteSecundaria: 'Playfair Display', serif;
+}
+
+.title-page {
+    font-size: 32px;
+    font-weight: bolder;
+    color: var(--logoLila);
+}
+
+.appointments .title {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.appointments-services .sub-title,
+.appointments-stylist .sub-title {
+    font-size: 18px;
+    font-weight: lighter;
+    font-family: var(--fuenteSecundaria);
+}
+
+
+
+.m-carousel {
+overflow: hidden;
+position: relative;
+width: 100%;
+-webkit-perspective: 500px;
+        perspective: 500px;
+-webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+-webkit-transform-origin: 0% 50%;
+        transform-origin: 0% 50%;
+}
+
+.m-carousel .carousel-item {
+visibility: hidden;
+width: 200px;
+height: 200px;
+position: absolute;
+top: 0;
+left: 0;
+}
+
+.m-carousel .carousel-item > img {
+width: 100%;
+}
+
+.appointments-services .m-carousel {
+    height: 300px;
+}
+
+.appointments-stylist .m-carousel {
+    height: 530px;
+}
+
+.appointments-services .carousel-item, .appointments-stylist .carousel-item{
+    width: 520px;
+    border-radius: 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.appointments-services .carousel-item{
+    height: 281px;
+}
+
+.appointments-stylist .carousel-item{
+    height: 500px;
+    width: 392px;
+}
+
+/* Fecha */
+.appointments-date,
+.appointments-services,
+.appointments-stylist {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.available-nonavailable {
+    display: flex;
+    font-size: 23px;
+    width: 380px;
+    justify-content: space-between;
+    position: relative;
+    padding: 0 30px;
+    margin: 32px 0 40px 0;
+}
+
+.available,
+.non-available {
+    margin: 0;
+}
+
+.available::before {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    left: -10px;
+    top: 5px;
+    background-color: #FFFFFF;
+    border: .5px solid #000000;
+}
+
+.non-available::before {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    right: 190px;
+    top: 5px;
+    background-color: var(--gris);
+}
+
+.outline {
+    outline: 3px solid #3483fa;
+}
+
+.calendario {
+    padding: 30px;
+    width: 765px;
+    border-radius: 12px;
+    background: var(--White, #FFF);
+    box-shadow: 0px 30px 84px 0px rgba(19, 10, 46, 0.08), 0px 8px 32px 0px rgba(19, 10, 46, 0.07), 0px 3px 14px 0px rgba(19, 10, 46, 0.03), 0px 1px 3px 0px rgba(19, 10, 46, 0.13);
+}
+
+.calendario .head {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.calendario .main ul{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    text-align: center;
+}
+
+.calendario .main li{
+    width: calc(100% / 7);
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calendario .days {
+    margin: 0;
+}
+
+.calendario .days li{
+    cursor: pointer;
+}
+
+.calendario .days li:hover{
+    background-color: #e6e6e6;
+    border-radius: 40px;
+}
+
+.calendario .days .block {
+    background-color: var(--gris);
+    border-radius: 40px;
+    pointer-events: none;
+}
+
+.calendario .days .today {
+    background-color: var(--rosaSalmon);
+    color: #FFFFFF;
+    border-radius: 40px;
+    pointer-events: none;
+}
+
+.calendario .days .select {
+    background-color: var(--logoLila);
+    color: #FFFFFF;
+    border-radius: 40px;
+    pointer-events: none;
+}
+
+.hour .time .select {
+    background-color: var(--logoLila);
+    color: #FFFFFF;
+    border-radius: 10px;
+    pointer-events: none;
+}
+
+.calendario .main .weeks {
+    font-weight: bold;
+}
+
+.calendario .main .prev-next-month {
+    color: #c3c3c3;
+    pointer-events: none;
+}
+
+.calendario #prev, 
+.calendario #next {
+    cursor: pointer;
+}
+
+/* time */
+.hour {
+    width: 765px;
+    background: var(--White, #FFF);
+    box-shadow: 0px 30px 84px 0px rgba(19, 10, 46, 0.08), 0px 8px 32px 0px rgba(19, 10, 46, 0.07), 0px 3px 14px 0px rgba(19, 10, 46, 0.03), 0px 1px 3px 0px rgba(19, 10, 46, 0.13);
+    padding: 48px 39px;
+    border-radius: 12px;
+}
+
+.hour ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 80px;
+    column-gap: 90px;
+}
+
+.time {
+    padding: 0;
+    margin: 0;
+}
+
+.time li {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e0e6ec;
+    border-radius: 10px;
+    color: #000000;
+    cursor: pointer;
+}
+
+.reservar-btn a {
+    border-radius: 8px;
+    margin-bottom: 140px;
+}
+
+.mensaje-appointment {
+    position: fixed;
+    left: -20%;
+    top: 4%;
+    transition: all 0.5s;
+}
