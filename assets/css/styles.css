@@ -13,8 +13,6 @@
 
     --fuentePrincipal: 'Manrope', sans-serif;
     --fuenteSecundaria: 'Playfair Display', serif;
-
-    
 }
 
 html {
@@ -30,17 +28,14 @@ body {
 a {
     text-decoration: none;
     color: black;
-    
 }
 a:hover {
     color: #000;
 }
-
 img {
     width: 100%;
     display: block;
 }
-
 ul {
     list-style: none;
 }
@@ -247,9 +242,9 @@ ul {
 }
 
 
-.reservar-btn button,
-.ver-productos button,
-.ver-servicios button {
+.reservar-btn a,
+.ver-productos a,
+.ver-servicios a {
     background-color: var(--rosaSalmon);
     padding: 20px 30px;
     margin-top: 40px;
@@ -257,21 +252,20 @@ ul {
     color: #28292B;
     font-weight: 900;
     transition-property: transform, box-shadow;
-    transition: .3s;
-    border: none;
+    transition-duration: .3s;
     z-index: 1;
 }
-@media (min-width: 768px) { 
-    .reservar-btn button,
-    .ver-productos button,
-    .ver-servicios button {
+@media (min-width: 768px) {
+    .reservar-btn a,
+    .ver-productos a, 
+    .ver-servicios a {
         letter-spacing: 1.8px;
     }
 } 
 
-.reservar-btn button:hover,
-.ver-productos button:hover,
-.ver-servicios button:hover {
+.reservar-btn a:hover,
+.ver-productos a:hover,
+.ver-servicios a:hover {
     transform: scale(1.1);
     box-shadow: 0 0px 16px 2px rgb(255, 192, 203, 0.9);
 }
@@ -362,7 +356,6 @@ ul {
         grid-template-columns: repeat(4, 1fr);
     }
 } 
-
 
 .producto {
     width: 265px;
@@ -700,13 +693,6 @@ ul {
 }
 
 /* Formulario login y register*/
-
-.campos {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 50px;
-}
-
 .formulario-login {
     padding: 30px;
 }
@@ -725,25 +711,13 @@ ul {
     }
 }
 
-@media (min-height: 576px) { 
-    .formulario-register {
-        padding: 17px 40px;
-    }
-} 
-@media (min-height: 780px) { 
-    .formulario-register {
-        padding: 26px;
-    }
-} 
-
 @media (min-width: 1400px) {
-    .formulario-login {
+    .formulario-login,
+    .formulario-register {
         width: 30%;
     }
-    .formulario-register {
-        width: 40%;
-    }
 }
+
 .formulario h1 {
     font-weight: 600;
 }
@@ -754,24 +728,11 @@ ul {
     margin-bottom: 15px;
 }
 
-.campo label{
-    color: #5E6366;
-    margin-left: 5px;
-    font-size: 15px;
+.campo label {
+    margin-bottom: 10px;
 }
 
-@media (min-height: 576px) { 
-    .campo label {
-        margin-bottom: 0px;
-    }
-} 
-@media (min-height: 780px) { 
-    .campo label {
-        margin-bottom: 10px;
-    }
-}
-
-.campo input, .campo select {
+.campo input {
     padding: 15px 10px;
     border: 1px solid #BEBEBF;
     border-radius: 8px;
@@ -789,7 +750,7 @@ ul {
 }
 
 .campo input::placeholder {
-    font-size: 13px;
+    font-size: 14px;
     color: #BEBEBF;
 }
 
@@ -869,37 +830,3 @@ input[type="submit"]:hover {
         transform: translate(40%, 50%);
     }
 }
-
-
-/* productc details
-
-.container-details{
-    position: relative;
-}
-
-
-.section-produc-detail {
-    background-color: var(--azulClaro);
-    padding: 50px 0 50px 0;
-    position: relative;
-}
-
-.text {
-
-    height: 250px;
-    background-color: #FFFFFF;
-    margin-top: 50px;
-    text-align: center;
-}
-
-.product-tex {
-    width: 480px;
-    height: 370px;
-    align-items: center;
-    text-align: left;
-    margin-left: 25px;
-    
-} */
-
-
-

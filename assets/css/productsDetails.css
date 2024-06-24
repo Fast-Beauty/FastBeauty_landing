@@ -74,7 +74,6 @@ img {
     display: block;
     /* max-width: 100%; */
     width: 800px;
-    height: 400px;
     border-radius: 20px;
 }
 
@@ -96,7 +95,7 @@ input[type="radio"] {
 
 
 .imgs-product-detail {
-    width: 800px;
+    width: 500px;
 }
 
 /* SLIDESHOW
