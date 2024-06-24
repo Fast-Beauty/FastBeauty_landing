@@ -15,7 +15,7 @@
                     <a class="nav-link gris-color" aria-current="page" href="#">Servicios</a>
                 </li>
                 <li class="nav-item d-flex fw-bold align-items-center">
-                    <a class="nav-link gris-color" href="??c=ProductsDetails&m=index">Productos</a>
+                    <a class="nav-link gris-color" href="?c=ProductsDetails&m=index">Productos</a>
                 </li>
                 <li class="nav-item d-flex fw-bold align-items-center">
                     <a class="nav-link gris-color" href="#"> Acerca</a>

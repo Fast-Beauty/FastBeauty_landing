@@ -16,7 +16,17 @@ class ProductsDetailsController{
         require_once('views/components/layout/footer.php');
     }
 
+    public function listarProductos() {
+        return $this->modelosvc->listarProductos();
+    }
 
+    public function listarProductosPorId($id) {
+        return $this->modelosvc->listarProductosPorId($id);
+    }
+
+    public function listarImagenProducto($id) {
+        return $this->modelosvc->listarImagenProducto($id);
+    }
 }
 
 ?>

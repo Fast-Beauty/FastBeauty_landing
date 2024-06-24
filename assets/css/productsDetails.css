@@ -1,7 +1,7 @@
-.section-produc-detail {
+.section-product-detail {
     background-color: var(--azulClaro);
     padding: 50px 0 50px 0;
-    position: relative;
+    /* position: relative; */
 }
 
 /* .product-tex {

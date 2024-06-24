@@ -25,6 +25,7 @@
             <?php
                         foreach ($this->modelosvc->listarProductos() as $datos) :
                             foreach ($this->modelosvc->listarImagenProducto($datos['id']) as $img) :
+                                foreach ($this->modelosvc->obtenerId($datos['id']) as $id) :
 
                         ?>
                 <ul class="featured-list">
@@ -87,23 +88,20 @@
                     </label>
                 </li>
             </ul>
-            <?php
-                            endforeach;
-                        endforeach;
-                        ?>
+            
         </div>
         <div class="product-text">
-            <h4>Jabón</h4>
+            <h4><?=$datos['name']?></h4>
             <!-- <p class="gris-color">For Soft, smooth skin</p> -->
 
             <div class="container-price">
                 <p class="price"> $<?=$datos['price']?></p>
-                <!-- <del class="prom price gris-color">$ 12,000</del>
+                <!-- <del class="prom price gris-color">$ 12.000</del>
                 <p class="off">50% OFF</p> -->
             </div>
 
             <div id="availability" class=""> 
-                <span class="a-size-medium a-color-success">(<?=$datos['quantity']?> disponibles) </span>
+                <span class="a-size-medium a-color-success">(<?=$datos['quantity']?> Unidades disponibles) </span>
             </div>
 
             <hr class="line">
@@ -122,6 +120,11 @@
                 </div>
                 <!-- End Descripcion -->
             </div>
+            <?php
+                            endforeach;
+                        endforeach;
+                    endforeach;
+                        ?>
         </div>
     </div>
     <!-- End Carrousel product -->
