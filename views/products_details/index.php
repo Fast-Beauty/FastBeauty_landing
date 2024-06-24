@@ -22,12 +22,9 @@
     <div class="container d-flex container-detail">
         <div class="imgs-product-detail">
             <div class="featured-wrapper">
-            <?php
-                        foreach ($this->modelosvc->listarProductos() as $datos) :
-                            foreach ($this->modelosvc->listarImagenProducto($datos['id']) as $img) :
-                                foreach ($this->modelosvc->obtenerId($datos['id']) as $id) :
-
-                        ?>
+            <?php 
+                foreach ($this->modelosvc->obtenerId($_GET['id']) as $datos) : 
+                    foreach( $this->modelosvc->listarImagenProducto($datos['id']) as $img):?>?>
                 <ul class="featured-list">
                     <li>
                         <figure>
@@ -120,11 +117,10 @@
                 </div>
                 <!-- End Descripcion -->
             </div>
-            <?php
-                            endforeach;
-                        endforeach;
+            <?php 
                     endforeach;
-                        ?>
+                endforeach;    
+            ?>
         </div>
     </div>
     <!-- End Carrousel product -->
