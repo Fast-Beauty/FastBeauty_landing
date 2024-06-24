@@ -17,6 +17,7 @@ class ProductsModel
         $datos = $sql->fetch_all(MYSQLI_ASSOC);
         return $datos;
     }
+
     public function listarImagen($id)
     {
         $sql = $this->svc->query("select * from products_images where productos_id=$id");
@@ -24,9 +25,10 @@ class ProductsModel
         return $datos;
     }
 
-//     public function obtenerMark($id) {
-//         $sql = $this->svc->query("SELECT mark.name AS mark FROM mark INNER JOIN products ON products.mark_id = mark.id WHERE mark.id =$id;");
-//         $datos = $sql->fetch_all(MYSQLI_ASSOC);
-//         return $datos['mark'];
-//     }
+    public function obtenerMark($id)
+    {
+        $sql = $this->svc->query("select * from mark where id=$id");
+        $datos = $sql->fetch_all(MYSQLI_ASSOC);
+        return $datos;
+    }
 }

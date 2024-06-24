@@ -146,11 +146,13 @@
                     <div class="producto" style="background-image: url('data:<?= $img['tipo_imagen']; ?>;base64,<?= base64_encode($img['imagen']); ?>');">
                         <div class="info-producto">
                             <h3><?= $datos['name'] ?></h3>
-                            <p class="descripcion"><?= $datos['description'] ?></p>
+                            <?php foreach ($this->modelosvc->obtenerMark($datos['id']) as $data) : ?>
+                                <p class="descripcion"><?= $data['name'] ?></p>
+                            <?php endforeach ?>
                             <p class="precio"><?= $datos['price'] ?></p>
                             <div class="carrito-producto">
                                 <a href="?c=ProductsDetails&m=index&id=<?= $datos['id'] ?>">
-                                    <img src="assets/images/Vector.svg" alt="">
+                                    <img src="assets/images/Eye.svg" alt="">
                                 </a>
                             </div>
                         </div>

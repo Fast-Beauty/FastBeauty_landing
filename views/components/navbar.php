@@ -20,12 +20,12 @@
                 <li class="nav-item d-flex fw-bold align-items-center">
                     <a class="nav-link gris-color" href="?c=Appointments&m=index"> Reserva</a>
                 </li>
-                <li class="nav-item d-flex fw-bold align-items-center">
+                <!-- <li class="nav-item d-flex fw-bold align-items-center">
                     <a class="nav-link gris-color" href="#">Contacto</a>
                 </li>
                 <li class="nav-item d-flex fw-bold align-items-center">
                     <a class="nav-link gris-color" href="#">Sucursales</a>
-                </li>
+                </li> -->
             </ul>
         </div>
     </div>
