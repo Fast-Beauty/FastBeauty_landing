@@ -21,7 +21,6 @@
 
 .products__header {
     margin-top: 60px;
-    margin-left: 150px;
     margin-bottom: 50px;
     width: 1240px;
     height: 360px;
@@ -118,7 +117,9 @@
 
  /*  sidebar   */
 
-
+.sidebar {
+    width: 250px;
+}
 .aside{
     width: 300px;
     /* background-color: #ffff; */
@@ -190,3 +191,25 @@
     height: 0;
 } 
 
+/* Producto */
+.section-productos-sidebar .section-products {
+    width: 100%;
+}
+
+/* .container-productos {
+    gap: 5%;
+} */
+
+@media (min-width: 992px) { 
+    .container-productos {
+        grid-template-columns: repeat(3, 1fr);
+    }
+} 
+
+.container-productos .producto {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-end;
+}
