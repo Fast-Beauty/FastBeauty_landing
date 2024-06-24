@@ -192,7 +192,7 @@
                 </div>
             </div>
             <div class="ver-productos d-flex justify-content-center">
-                <button>Ver todos los productos</button>
+                <a href="?c=Products&m=products">Ver todos los productos</a>
             </div>
         </div>
         <div class="flower1">

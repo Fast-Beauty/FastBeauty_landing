@@ -7,8 +7,10 @@
             aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="?c=Landing&m=landing">Home</a></li>
-                <li class="breadcrumb-item"><a href="?c=ProductsDetails&m=index">Productos</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Jabones</li>
+                <li class="breadcrumb-item"><a href="?c=Products&m=products">Productos</a></li>
+                <?php foreach ($this->modelosvc->obtenerId($_GET['id']) as $datos) : ?>
+                    <li class="breadcrumb-item active" aria-current="page"><?=$datos['name']?></li>
+                <?php endforeach ?>
             </ol>
         </nav>
     </div>
