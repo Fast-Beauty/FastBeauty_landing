@@ -61,7 +61,7 @@
 
                     <input type="submit" value="Iniciar Sesión" class="">
                 </form>
-                <div class="social-network">
+                <!-- <div class="social-network">
                     <p class="text-center">- O continúe con -</p>
                     <div class="options d-flex justify-content-between gap-4">
                         <a href="#" class="google">
@@ -71,7 +71,7 @@
                             <img src="assets/images/facebook.svg" alt="Logo Facebook">
                         </a>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
         <div class="register">
@@ -89,25 +89,52 @@
                 </div>
             </div>
             <div class="formulario-register mt-4">
-                <form action="" id="formulario-register" class="formulario">
-                    <h1 class="text-center mb-4">Crear Cuenta</h1>
-
-                    <div class="campo">
-                        <label for="correo-r">Email</label>
-                        <input type="text" id="correo-r" placeholder="Ingrese su correo">
-                    </div>
-                    <div class="campo">
-                        <label for="password-r">Contraseña</label>
-                        <input type="password" id="password-r" placeholder="Ingrese su contraseña">
-                    </div>
-                    <div class="campo">
-                        <label for="password-r2">Confirmar contraseña</label>
-                        <input type="password" id="password-r2" placeholder="Ingrese su contraseña de nuevo">
+            <h1 class="text-center mb-1">Crear Cuenta</h1>
+            <form action="" id="formulario-register" class="formulario">
+                    <div class="campos">
+                        <div class="campo">
+                            <label for="name">Nombre</label>
+                            <input type="text" id="name" placeholder="Ingrese su nombre">
+                        </div>
+                        <div class="campo">
+                            <label for="lastname">Apellido</label>
+                            <input type="text" id="lastname" placeholder="Ingrese sus apellidos">
+                        </div>
+                        <div class="campo">
+                            <label for="phone">Telefono</label>
+                            <input type="number" id="phone" placeholder="Ingrese su numero de telefono">
+                        </div>
+    
+                        <div class="campo">
+                            <label for="phone">Tipo de documento</label>
+                            <select name="type_document" id="type_document">
+                                <option value="" selected disabled>Seleccione</option>
+                                <option value="C.C">Cédula de Ciudadanía</option>
+                                <option value="T.I">Tarjeta de identidad</option>
+                                <option value="C.E">Cédula de extranjería</option>
+                            </select>
+                        </div>
+                        <div class="campo">
+                            <label for="text">Documento</label>
+                            <input type="number" id="document" placeholder="Ingrese su documentoo">
+                        </div>
+                        <div class="campo">
+                            <label for="correo-r">Email</label>
+                            <input type="text" id="correo-r" placeholder="Ingrese su correo">
+                        </div>
+                        <div class="campo">
+                            <label for="password-r">Contraseña</label>
+                            <input type="password" id="password-r" placeholder="Ingrese su contraseña">
+                        </div>
+                        <div class="campo">
+                            <label for="password-r2">Confirmar contraseña</label>
+                            <input type="password" id="password-r2" placeholder="Ingrese su contraseña de nuevo">
+                        </div>
                     </div>
 
                     <input type="submit" value="Crear cuenta" class="">
                 </form>
-                <div class="social-network">
+                <!-- <div class="social-network">
                     <p class="text-center">- O regístrese con -</p>
                     <div class="options d-flex justify-content-between gap-4">
                         <a href="#" class="google">
@@ -117,7 +144,7 @@
                             <img src="assets/images/facebook.svg" alt="Logo Facebook">
                         </a>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
         <div class="circles">
@@ -129,5 +156,7 @@
     </main>
 
     <script src="assets/js/app.js"></script>
+    <script src="assets/js/signIn.js" type="module"></script>
+    <script src="assets/js/signUp.js" type="module"></script>
 </body>
 </html>

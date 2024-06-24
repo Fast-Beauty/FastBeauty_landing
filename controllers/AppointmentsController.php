@@ -1,17 +1,19 @@
 <?php
 
-require_once 'models/LoginModel.php';
+require_once 'models/AppointmentsModel.php';
 
-class LoginController {
+class AppointmentsController{
 
     private $modelosvc;
 
     public function __CONSTRUCT() {
-        $this->modelosvc = new LoginModel();
+        $this->modelosvc = new AppointmentsModel();
     }
 
-    public function login() {
-        require_once('views/login/login.php');
+    public function index(){  
+        require_once('views/components/layout/head.php');
+        require_once('views/Appointments/index.php');
+        require_once('views/components/layout/footer.php');
     }
 
     public function create() {
@@ -25,3 +27,5 @@ class LoginController {
         }    
     }
 }
+
+?>
