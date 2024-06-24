@@ -118,7 +118,7 @@
  /*  sidebar   */
 
 .sidebar {
-    width: 250px;
+    width: 251px;
 }
 .aside{
     width: 300px;
@@ -195,10 +195,6 @@
 .section-productos-sidebar .section-products {
     width: 100%;
 }
-
-/* .container-productos {
-    gap: 5%;
-} */
 
 @media (min-width: 992px) { 
     .container-productos {
