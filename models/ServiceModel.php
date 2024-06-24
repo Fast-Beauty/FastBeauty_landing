@@ -1,4 +1,3 @@
-<?php
 
 class ServiceModel {
     private $svc;

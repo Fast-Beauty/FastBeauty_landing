@@ -1,5 +1,5 @@
 <?php 
- require_once('./views/components/footer.php'); 
+    require_once('./views/components/footer.php'); 
 ?>
 
 </body>
