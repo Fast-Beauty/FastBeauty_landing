@@ -18,6 +18,3 @@ class db {
         return $conn;
     }
 }
-
-
-?>

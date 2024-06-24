@@ -53,7 +53,7 @@
                         </div>
                         <div class="d-flex">
                             <p class="fw-bold">Email:</p>
-                            <p class="ps-1">correo@correo.com</p>
+                            <p class="ps-1">fastbeautyproyect@correo.com</p>
                         </div>
                         <div class="d-flex">
                             <p class="fw-bold">Telefono:</p>
