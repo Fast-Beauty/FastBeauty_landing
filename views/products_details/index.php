@@ -24,21 +24,21 @@
             <div class="featured-wrapper">
             <?php 
                 foreach ($this->modelosvc->obtenerId($_GET['id']) as $datos) : 
-                    foreach( $this->modelosvc->listarImagenProducto($datos['id']) as $img):?>?>
+                    foreach( $this->modelosvc->listarImagenProducto($datos['id']) as $img):?>
                 <ul class="featured-list">
                     <li>
                         <figure>
-                        <img src="data:<?= $img['tipo_imagen']; ?>;base64,<?= base64_encode($img['imagen']); ?>" alt="Imagen">
+                        <img class="imgs" src="data:<?= $img['tipo_imagen']; ?>;base64,<?= base64_encode($img['imagen']); ?>" alt="Imagen">
                         </figure>
                     </li>
                     <li>
                         <figure>
-                        <img src="data:<?= $img['tipo_imagen']; ?>;base64,<?= base64_encode($img['imagen']); ?>" alt="Imagen">
+                        <img class="imgs" src="data:<?= $img['tipo_imagen']; ?>;base64,<?= base64_encode($img['imagen']); ?>" alt="Imagen">
                         </figure>
                     </li>
                     <li>
                         <figure>
-                        <img src="data:<?= $img['tipo_imagen']; ?>;base64,<?= base64_encode($img['imagen']); ?>" alt="Imagen">
+                        <img class="imgs" src="data:<?= $img['tipo_imagen']; ?>;base64,<?= base64_encode($img['imagen']); ?>" alt="Imagen">
                         </figure>
                     </li>
                 </ul>
