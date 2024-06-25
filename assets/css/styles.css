@@ -253,6 +253,7 @@ ul {
     transition-property: transform, box-shadow;
     transition-duration: .3s;
     z-index: 1;
+    box-shadow: 0 0px 16px 1px rgb(255, 192, 203, 0.6);
 }
 @media (min-width: 768px) {
     .reservar-btn a,
@@ -692,6 +693,13 @@ ul {
 }
 
 /* Formulario login y register*/
+
+.campos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 50px;
+}
+
 .formulario-login {
     padding: 30px;
 }
@@ -710,13 +718,25 @@ ul {
     }
 }
 
-@media (min-width: 1400px) {
-    .formulario-login,
+@media (min-height: 576px) { 
     .formulario-register {
+        padding: 17px 40px;
+    }
+} 
+@media (min-height: 780px) { 
+    .formulario-register {
+        padding: 26px;
+    }
+} 
+
+@media (min-width: 1400px) {
+    .formulario-login {
         width: 30%;
     }
+    .formulario-register {
+        width: 40%;
+    }
 }
-
 .formulario h1 {
     font-weight: 600;
 }
@@ -727,11 +747,24 @@ ul {
     margin-bottom: 15px;
 }
 
-.campo label {
-    margin-bottom: 10px;
+.campo label{
+    color: #5E6366;
+    margin-left: 5px;
+    font-size: 15px;
 }
 
-.campo input {
+@media (min-height: 576px) { 
+    .campo label {
+        margin-bottom: 0px;
+    }
+} 
+@media (min-height: 780px) { 
+    .campo label {
+        margin-bottom: 10px;
+    }
+}
+
+.campo input, .campo select {
     padding: 15px 10px;
     border: 1px solid #BEBEBF;
     border-radius: 8px;
@@ -749,7 +782,7 @@ ul {
 }
 
 .campo input::placeholder {
-    font-size: 14px;
+    font-size: 13px;
     color: #BEBEBF;
 }
 
