@@ -29,10 +29,10 @@ async function logUsuario(e) {
         const userCredentials = await signInWithEmailAndPassword(auth, email.value, password.value);
         console.log(userCredentials);
         imprimirAlerta('Inicio de sesión exitoso, bienvenido');
-
-        setTimeout(() => {
-            window.location.href = '?c=Landing&m=landing';
-        }, 2000);
+        guardarId({email: user.email});
+        // setTimeout(() => {
+        //     window.location.href = '?c=Landing&m=landing';
+        // }, 2000);
 
     } catch (error) {
         console.log(error);
@@ -74,4 +74,22 @@ function imprimirAlerta(mensaje, tipo) {
         }, 2000);
     }
 
+}
+
+
+async function guardarId(email) {
+    try {
+        const response = await fetch('?c=Login&m=getUser', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(email)
+        });
+        const result = await response.json();
+        //Enviar a localStorage
+        localStorage.setItem("id", result);
+    } catch (error) {
+        console.log(JSON.stringify(error));
+    }
 }

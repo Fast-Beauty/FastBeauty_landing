@@ -17,4 +17,11 @@ class LoginModel {
             return false;
         }        
     }
+
+    public function getUser($data) {
+        $sql = "SELECT id FROM `users` WHERE email = '{$data['email']}'";
+        $result = $this->svc->query($sql);
+        $row = $result->fetch_assoc();
+        return $row;
+    }
 }

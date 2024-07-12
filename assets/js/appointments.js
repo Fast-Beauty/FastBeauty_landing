@@ -146,8 +146,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 body: JSON.stringify(appointment)
             });
             const result = await response.json();
-            if (result.success == true) {
+            console.log(result);
+            if (result == true) {
                 mostrarMensaje("Su cita ha sido reservada correctamente");
+            } else if (result == 'La hora ya esta reservada para este empleado.'){
+                mostrarMensaje(result, 'error');
+
             }
         } catch (error) {
             console.log('Error:', error);
@@ -201,7 +205,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }, 2500);
         }
         setTimeout(() => {
-            alerta.style.left = "-20%";
+            alerta.style.left = "-30%";
         }, 2000);
 
     }

@@ -32,12 +32,29 @@ class AppointmentsModel {
     }
 
     public function insert($data) {
-        $stmt = $this->svc->prepare("INSERT INTO appointments (status, date, hora, clients_id, employees_id, services_id) VALUES (?, ?, ?, ?, ?, ?)");
-        $stmt->bind_param("sssiii", $data['status'], $data['date'], $data['hora'], $data['clients_id'], $data['employees_id'], $data['services_id']);
-        if ($stmt->execute()) {
-            return true;
+
+        $sql = "SELECT COUNT(*) FROM appointments WHERE employees_id = '{$data['employees_id']}' AND hora = '{$data['hora']}'";
+        $result = $this->svc->query($sql);
+        $row = $result->fetch_assoc();
+        // return $row;
+
+        if ($row['COUNT(*)'] > 0) {
+            return "La hora ya esta reservada para este empleado.";
         } else {
-            return false;
-        }        
+            $stmt = $this->svc->prepare("INSERT INTO appointments (status, date, hora, clients_id, employees_id, services_id) VALUES (?, ?, ?, ?, ?, ?)");
+            $stmt->bind_param("sssiii", $data['status'], $data['date'], $data['hora'], $data['clients_id'], $data['employees_id'], $data['services_id']);
+            if ($stmt->execute()) {
+                return true;
+            } else {
+                return false;
+            }        
+
+        }
+        
+    }
+
+    public function horaEstilistas($id, $hora) {
+        $datos = $sql->fetch_all(MYSQLI_ASSOC);
+        return $datos;
     }
 }

@@ -24,4 +24,14 @@ class LoginController {
             echo json_encode(['success' => false]);
         }    
     }
+
+    public function getUser() {
+        $data = json_decode(file_get_contents('php://input'), true);
+        $result = $this->modelosvc->getUser($data);
+        if($result) {
+            echo json_encode($result['id']);
+        } else {
+            echo json_encode('false');
+        }
+    }
 }

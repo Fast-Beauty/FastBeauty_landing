@@ -113,7 +113,7 @@ function validarLogin(e) {
         imprimirAlerta('Todos los campos son obligatorios', 'error', e.target.id);
         return;
     }
-    verificarApi();
+    // verificarApi();
 
 }
 
@@ -195,22 +195,22 @@ async function nuevoUsuario(usuario) {
     }
 }
 
-async function verificarApi() {
-    try {
-        // await fetch(urlWebhook, {
-        //     method: 'POST',
-        //     body: JSON.stringify(msg),
-        //     headers: {
-        //         'content-Type': 'application/json'
-        //     }
-        // });
-        const respuesta = await fetch(url);
-        const resultado = await respuesta.json();
-        validarUsuario(resultado);
-    } catch (error) {
-        console.log(error)
-    }
-}
+// async function verificarApi() {
+//     try {
+//         // await fetch(urlWebhook, {
+//         //     method: 'POST',
+//         //     body: JSON.stringify(msg),
+//         //     headers: {
+//         //         'content-Type': 'application/json'
+//         //     }
+//         // });
+//         const respuesta = await fetch(url);
+//         const resultado = await respuesta.json();
+//         validarUsuario(resultado);
+//     } catch (error) {
+//         console.log(error)
+//     }
+// }
 
 function validarUsuario(usuarios) {
     const form = 'formulario-login';

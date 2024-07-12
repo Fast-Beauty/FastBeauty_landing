@@ -20,11 +20,12 @@ class AppointmentsController{
         $data = json_decode(file_get_contents('php://input'), true);
         $result = $this->modelosvc->insert($data);
     
-        if ($result) {
-            echo json_encode(['success' => true]);
-        } else {
-            echo json_encode(['success' => false]);
-        }    
+        // if ($result) {
+        //     echo json_encode(['success' => true]);
+        // } else {
+        //     echo json_encode(['success' => false]);
+        // }    
+        echo json_encode($result);
     }
 }
 
