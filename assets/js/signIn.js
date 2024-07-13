@@ -30,9 +30,9 @@ async function logUsuario(e) {
         console.log(userCredentials);
         imprimirAlerta('Inicio de sesión exitoso, bienvenido');
         guardarId({email: user.email});
-        // setTimeout(() => {
-        //     window.location.href = '?c=Landing&m=landing';
-        // }, 2000);
+        setTimeout(() => {
+            window.location.href = '?c=Landing&m=landing';
+        }, 2000);
 
     } catch (error) {
         console.log(error);

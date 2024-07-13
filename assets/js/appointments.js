@@ -7,6 +7,8 @@ let currentYear = fecha.getFullYear();
 let currentMonth = fecha.getMonth();
 const meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
 
+console.log(typeof(+localStorage.getItem("id")))
+
 //Eventos
 prevNext.forEach(arrow => {
     arrow.addEventListener('click', () => {
@@ -146,12 +148,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 body: JSON.stringify(appointment)
             });
             const result = await response.json();
-            console.log(result);
             if (result == true) {
                 mostrarMensaje("Su cita ha sido reservada correctamente");
-            } else if (result == 'La hora ya esta reservada para este empleado.'){
+            } else if (result == 'La fecha y hora ya esta reservada para este empleado.'){
                 mostrarMensaje(result, 'error');
 
+            } else if(result == false) {
+                mostrarMensaje("No ha iniciado sesión", "error")
             }
         } catch (error) {
             console.log('Error:', error);
