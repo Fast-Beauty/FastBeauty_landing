@@ -97,6 +97,10 @@ ul {
     position: relative;
 }
 
+.nav-item div {
+    cursor: pointer;
+}
+
 /* Presentation */
 .presentation {
     background: linear-gradient(to right, var(--rosaPalo) 50%, var(--beigeClaro) 50%);

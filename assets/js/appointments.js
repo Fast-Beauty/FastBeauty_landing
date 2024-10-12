@@ -53,11 +53,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const btnReservar = document.querySelector('.reserva-cita')
     const cita = {
         status: "Espera",
+        clients_id: "",
+        services_id: "",
+        employees_id: "",
         date: "",
         hora: "",
-        clients_id: 2,
-        employees_id: "",
-        services_id: ""
     }
     
     //Eventos
@@ -120,16 +120,19 @@ document.addEventListener('DOMContentLoaded', () => {
                 if(cita[key] === '') {
                     if(key == 'services_id') {
                         mostrarMensaje("Debe seleccionar un servicio", "error");
+                        return;
                     } else if(key == 'employees_id') {
                         mostrarMensaje("Debe seleccionar un estilista", "error");
+                        return;
                     } else if(key == 'date') {
                         mostrarMensaje("Debe seleccionar una fecha", "error");
+                        return;
                     } else if(key == 'hora') {
                         mostrarMensaje("Debe seleccionar una hora", "error");
+                        return;
                     }
                 }
             }
-            return
         }
         agendarCita(cita)       
     }
@@ -205,5 +208,28 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 2000);
 
     }
+
+    function idUser() {
+        const email = localStorage.getItem('email');
+        if(email) {
+            return true
+        } else {
+            return false;
+        }
+
+    }
+
+    function renderizarBtnReservar() {
+        const btnAlert = document.querySelector('.reserva-alert');
+        if(!idUser()) {
+            btnReservar.classList.add('d-none');
+            btnAlert.classList.remove('d-none');
+        } else {
+            btnReservar.classList.remove('d-none');
+            btnAlert.classList.add('d-none');
+        }
+    }
+
+    renderizarBtnReservar();
 
 })

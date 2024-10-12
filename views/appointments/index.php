@@ -79,10 +79,32 @@
   </div>
   <div class="reservar-btn d-flex justify-content-center">
       <a href="javascript:void(0);" class="reserva-cita">Reserva ahora</a>
+      <button type="button" class="btn btn-primary reserva-alert" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Reserva ahora
+      </button>
   </div>
   <div class="mensaje-appointment alert" role="alert"></div>
+  
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Inicia sesión para reservar una cita</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Para agendar una cita, primero debes iniciar sesión en tu cuenta.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" onclick="window.location.href='?c=Login&m=login'">Iniciar sesión</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 </section>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <script>
   document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.m-carousel');

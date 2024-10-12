@@ -27,6 +27,8 @@ async function logUsuario(e) {
 
     try {
         const userCredentials = await signInWithEmailAndPassword(auth, email.value, password.value);
+        const userEmail = userCredentials.user.auth.currentUser.email;
+        localStorage.setItem('email', userEmail);
         console.log(userCredentials);
         imprimirAlerta('Inicio de sesión exitoso, bienvenido');
 
