@@ -72,15 +72,40 @@ ul {
 }
 
 .navbar-nav li:last-child {
-    border-radius: 30px;
-    padding: 0 15px;
     transition: .3s;
     position: relative;
     z-index: 1;
+    cursor: pointer;
+    width: 150px;
 }
-.navbar-nav li:last-child:hover {
-    transform: scale(1.1);
+
+.navbar-nav li:last-child .notificacion {
+    background-color: white;
+    top: 100%;
+    padding: 0;
+    width: 150px;
+    border-radius: 5px;
+    right: 0;
+    padding: 10px 0;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, .3);
 }
+.navbar-nav li:last-child .notificacion::before {
+    content: "";
+    border: 10px solid transparent;
+    border-left-color: white;
+    border-top-color: white;
+    position: absolute;
+    border-radius: 3px;
+    top: -8px;
+    right: 15px;
+    transform: rotate(45deg);
+    z-index: 1002;
+}
+.navbar-nav li:last-child .notificacion .text-user {
+    font-weight: lighter;
+}
+
+
 
 .nav-item {
     padding-right: 15px;

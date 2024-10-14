@@ -79,14 +79,14 @@
   </div>
   <div class="reservar-btn d-flex justify-content-center">
       <a href="javascript:void(0);" class="reserva-cita">Reserva ahora</a>
-      <button type="button" class="btn btn-primary reserva-alert" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      <a type="button" class="reserva-alert" data-bs-toggle="modal" data-bs-target="#exampleModal">
         Reserva ahora
-      </button>
+      </a>
   </div>
   <div class="mensaje-appointment alert" role="alert"></div>
   
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
+  <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
         <h1 class="modal-title fs-5" id="exampleModalLabel">Inicia sesión para reservar una cita</h1>
