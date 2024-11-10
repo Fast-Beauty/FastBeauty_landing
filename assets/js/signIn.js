@@ -35,6 +35,7 @@ async function logUsuario(e) {
                 return
             }
             localStorage.setItem('name', response[0].name);
+            localStorage.setItem('id', response[0].id);
 
         } catch (error) {
             console.log(error);

@@ -20,6 +20,9 @@
                 <li class="nav-item d-flex fw-bold align-items-center">
                     <a class="nav-link gris-color" href="?c=Appointments&m=index"> Reserva</a>
                 </li>
+                <li class="nav-item d-flex fw-bold align-items-center appointments">
+                    <a class="nav-link gris-color" href="#" onclick="tusCitas()">Citas</a>
+                </li>
                 <li class="nav-item d-flex fw-bold align-items-center">
                     <div class="nav-link gris-color name-user d-flex align-items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person" color="#7C838A" viewBox="0 0 16 16">

@@ -1,0 +1,22 @@
+table{
+  border-collapse: separate !important;
+  border-spacing: 0px 10px !important;
+}
+
+
+table td:first-child {
+  border-radius: 10px 0 0 10px !important;
+}
+
+table td:last-child {
+  border-radius: 0 10px 10px 0 !important;
+}
+
+tr th {
+  color: #ACACAC !important;
+} 
+
+.icon-table a, .back-user a {
+  font-size: 16px !important;
+  color: #4099FF !important;
+}
