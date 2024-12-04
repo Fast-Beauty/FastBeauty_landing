@@ -32,7 +32,8 @@ async function registrarUsuario(e) {
         email: email.value,
         password: password.value,
         status: "ACTIVE",
-        confirmPasword: confirmPasword.value
+        confirmPasword: confirmPasword.value,
+        id: Date.now()
     }
 
     if (!Object.values(user).every(users => users != '')) {
@@ -49,7 +50,8 @@ async function registrarUsuario(e) {
         console.log(userCredentials);
         imprimirAlerta('Registrado con éxito');
         // sendDataApi(user); 
-        sendDataDB(user);
+        await sendDataDB(user);
+        await getId(user.email);
     } catch (error) {
         console.log(error);
         switch (error.code) {
@@ -122,6 +124,49 @@ async function sendDataDB(usuario) {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify(usuario)
+        });
+        const result = await response.json();
+        if (result.success == true) {
+            // setTimeout(() => {
+            //     location.reload();
+            // }, 1800);
+        }
+    } catch (error) {
+        console.log('Error:', error);
+    }
+}
+async function getId(email) {
+    const url = '?c=Login&m=obtenerId';
+    try {
+        const response = await fetch(url, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({email})
+        });
+        const result = await response.json();
+        sendDataDBClient(result.data[0].id);
+
+        if (result.success == true) {
+            setTimeout(() => {
+                location.reload();
+            }, 1800);
+        }
+    } catch (error) {
+        console.log('Error:', error);
+    }
+}
+
+async function sendDataDBClient(users_id) {
+    const url = '?c=Login&m=createClient';
+    try {
+        const response = await fetch(url, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({users_id})
         });
         const result = await response.json();
         if (result.success == true) {

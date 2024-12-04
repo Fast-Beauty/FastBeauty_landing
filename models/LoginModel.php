@@ -1,13 +1,16 @@
 <?php
 
-class LoginModel {
+class LoginModel
+{
     private $svc;
 
-    public function __CONSTRUCT() {
+    public function __CONSTRUCT()
+    {
         $this->svc = (new db())->conexion();
     }
 
-    public function insert($data) {
+    public function insert($data)
+    {
         $hashedPassword = password_hash($data['password'], PASSWORD_BCRYPT);
         $stmt = $this->svc->prepare("INSERT INTO users (name, lastname, email, phone, type_document, document, password, status) VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
         $stmt->bind_param("sssisiss", $data['name'], $data['lastname'], $data['email'], $data['phone'], $data['type_document'], $data['document'], $hashedPassword, $data['status']);
@@ -15,6 +18,28 @@ class LoginModel {
             return true;
         } else {
             return false;
-        }        
+        }
     }
+    public function insertClient($data)
+    {
+        $stmt = $this->svc->prepare("INSERT INTO clients (users_id) VALUES (?)");
+        $stmt->bind_param("i", $data['users_id']);
+        if ($stmt->execute()) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public function obtenerId($email)
+    {
+        $stmt = $this->svc->prepare("SELECT id FROM users WHERE email = ?");
+        $stmt->bind_param("s", $email);
+        $stmt->execute();
+        $result = $stmt->get_result();
+        $datos = $result->fetch_all(MYSQLI_ASSOC);
+        $stmt->close();
+        return $datos;
+    }
+
 }
